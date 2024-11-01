@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TodoListFireStoreViewController" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="Uqz-2U-RwE" id="ku1-2V-B18"/>
+                <outlet property="tableView" destination="NYM-jx-sry" id="8hR-aV-0ea"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqz-2U-RwE">
+                    <rect key="frame" x="322.33333333333331" y="69" width="54.666666666666686" height="35"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.53333333329999999" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Jqe-kM-RG0"/>
+                    </constraints>
+                    <color key="tintColor" red="0.97254901959999995" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NYM-jx-sry">
+                    <rect key="frame" x="0.0" y="118" width="393" height="734"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="FoodWhite"/>
+            <constraints>
+                <constraint firstItem="NYM-jx-sry" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="0RP-EU-F4V"/>
+                <constraint firstItem="NYM-jx-sry" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3fS-vb-2es"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Uqz-2U-RwE" secondAttribute="trailing" constant="16" id="Io1-jv-Qr2"/>
+                <constraint firstItem="NYM-jx-sry" firstAttribute="top" secondItem="Uqz-2U-RwE" secondAttribute="bottom" constant="14" id="Jcx-w2-krL"/>
+                <constraint firstItem="Uqz-2U-RwE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="ak6-5r-Vun"/>
+                <constraint firstAttribute="bottom" secondItem="NYM-jx-sry" secondAttribute="bottom" id="bjn-lL-kAG"/>
+            </constraints>
+            <point key="canvasLocation" x="17.557251908396946" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="FoodWhite">
+            <color red="0.97299998998641968" green="0.98400002717971802" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

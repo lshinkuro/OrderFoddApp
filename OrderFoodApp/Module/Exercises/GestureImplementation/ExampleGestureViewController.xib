@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExampleGestureViewController" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="animalPicker" destination="T6z-dA-qeK" id="fc2-6O-zhk"/>
+                <outlet property="containerView" destination="Uu6-fJ-FOY" id="942-zn-mDo"/>
+                <outlet property="dateLabel" destination="DB1-BY-CeY" id="FRw-dW-uGC"/>
+                <outlet property="imgView" destination="pyD-1e-1gt" id="jOY-Su-Vly"/>
+                <outlet property="pickerView" destination="bDu-yA-2Xr" id="MKN-Bw-Zpa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pyD-1e-1gt">
+                    <rect key="frame" x="0.0" y="131" width="393" height="347"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQ4-Ti-p6t" customClass="ToolBarView" customModule="OrderFoodApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="72"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="kGe-ec-dpw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uu6-fJ-FOY">
+                    <rect key="frame" x="0.0" y="452" width="393" height="400"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDu-yA-2Xr">
+                            <rect key="frame" x="16" y="30" width="361" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="TkY-5P-8ti"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </pickerView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DB1-BY-CeY">
+                            <rect key="frame" x="16" y="100" width="361" height="32"/>
+                            <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="32"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6z-dA-qeK">
+                            <rect key="frame" x="16" y="142" width="361" height="216"/>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="tintColor"/>
+                    <constraints>
+                        <constraint firstItem="DB1-BY-CeY" firstAttribute="top" secondItem="bDu-yA-2Xr" secondAttribute="bottom" constant="20" id="0cf-l2-N6G"/>
+                        <constraint firstItem="bDu-yA-2Xr" firstAttribute="top" secondItem="Uu6-fJ-FOY" secondAttribute="top" constant="30" id="3Rr-PQ-WFC"/>
+                        <constraint firstAttribute="height" constant="400" id="5cO-d0-yyb"/>
+                        <constraint firstItem="T6z-dA-qeK" firstAttribute="top" secondItem="DB1-BY-CeY" secondAttribute="bottom" constant="10" id="AjI-u6-dlJ"/>
+                        <constraint firstItem="DB1-BY-CeY" firstAttribute="leading" secondItem="Uu6-fJ-FOY" secondAttribute="leading" constant="16" id="I6x-Lh-U6M"/>
+                        <constraint firstItem="T6z-dA-qeK" firstAttribute="leading" secondItem="Uu6-fJ-FOY" secondAttribute="leading" constant="16" id="KIE-mh-BES"/>
+                        <constraint firstAttribute="trailing" secondItem="T6z-dA-qeK" secondAttribute="trailing" constant="16" id="ciE-R7-w6f"/>
+                        <constraint firstAttribute="trailing" secondItem="DB1-BY-CeY" secondAttribute="trailing" constant="16" id="sbV-mj-aq8"/>
+                        <constraint firstAttribute="trailing" secondItem="bDu-yA-2Xr" secondAttribute="trailing" constant="16" id="y8g-6U-omz"/>
+                        <constraint firstItem="bDu-yA-2Xr" firstAttribute="leading" secondItem="Uu6-fJ-FOY" secondAttribute="leading" constant="16" id="yAF-Cc-v8w"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Uu6-fJ-FOY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="23R-Uf-MAI"/>
+                <constraint firstItem="pyD-1e-1gt" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="52E-7M-IxG"/>
+                <constraint firstAttribute="bottom" secondItem="Uu6-fJ-FOY" secondAttribute="bottom" id="PA7-Gb-2nk"/>
+                <constraint firstItem="eQ4-Ti-p6t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Pl8-Zt-smy"/>
+                <constraint firstItem="Uu6-fJ-FOY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="V8Z-xp-LGT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eQ4-Ti-p6t" secondAttribute="trailing" id="XZ6-9m-I6G"/>
+                <constraint firstItem="pyD-1e-1gt" firstAttribute="top" secondItem="eQ4-Ti-p6t" secondAttribute="bottom" id="an3-ev-lKh"/>
+                <constraint firstItem="pyD-1e-1gt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bFp-pI-WmT"/>
+                <constraint firstItem="Uu6-fJ-FOY" firstAttribute="top" secondItem="pyD-1e-1gt" secondAttribute="bottom" constant="-26" id="hWB-Jr-3oB"/>
+                <constraint firstItem="eQ4-Ti-p6t" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xhg-Dk-tKO"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

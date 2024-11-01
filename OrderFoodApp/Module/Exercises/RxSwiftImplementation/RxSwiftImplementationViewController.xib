@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RxSwiftImplementationViewController" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="changeNumberButton" destination="9hW-AU-G4t" id="rCt-9X-JpD"/>
+                <outlet property="passwordField" destination="Mfi-Zm-uQs" id="86Y-CN-ULb"/>
+                <outlet property="phoneNumberField" destination="wiU-uq-LNh" id="1pG-mn-2ZL"/>
+                <outlet property="rxLabel" destination="9vd-eg-bwO" id="Ps0-hv-BOL"/>
+                <outlet property="usernameField" destination="Olg-6n-Sc9" id="fMJ-6G-6nJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vd-eg-bwO">
+                    <rect key="frame" x="183" y="649.66666666666663" width="27" height="83.333333333333371"/>
+                    <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="50"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hW-AU-G4t">
+                    <rect key="frame" x="16" y="743" width="361" height="35"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Aod-UK-xzf"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="change Number"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V3f-Pd-nIP">
+                    <rect key="frame" x="16" y="115" width="361" height="286"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Olg-6n-Sc9" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="82"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="82" id="Qq5-i9-Fc6"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfi-Zm-uQs" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="102" width="361" height="82"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="82" id="Yug-qb-KNO"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wiU-uq-LNh" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="204" width="361" height="82"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="82" id="3EP-EA-93w"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="FoodWhite"/>
+            <constraints>
+                <constraint firstItem="9hW-AU-G4t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="LDb-k4-4e4"/>
+                <constraint firstItem="9hW-AU-G4t" firstAttribute="top" secondItem="9vd-eg-bwO" secondAttribute="bottom" constant="10" id="MUE-zj-os5"/>
+                <constraint firstItem="V3f-Pd-nIP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="V8q-Px-1fI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9hW-AU-G4t" secondAttribute="trailing" constant="16" id="d0K-au-8Lt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V3f-Pd-nIP" secondAttribute="trailing" constant="16" id="doX-W8-eLU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9hW-AU-G4t" secondAttribute="bottom" constant="40" id="ek1-b3-wHt"/>
+                <constraint firstItem="V3f-Pd-nIP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="56" id="hi4-rO-sGp"/>
+                <constraint firstItem="9vd-eg-bwO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oMr-Lm-Ung"/>
+            </constraints>
+            <point key="canvasLocation" x="20.610687022900763" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="FoodWhite">
+            <color red="0.97299998998641968" green="0.98400002717971802" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="errorLabel" destination="zxn-GV-shl" id="lmG-1e-K72"/>
+                <outlet property="logoImgView" destination="Nap-zY-D0b" id="KfH-Dy-VKV"/>
+                <outlet property="texfieldContainerView" destination="VXF-lq-NBp" id="0Fy-U4-f8U"/>
+                <outlet property="textfield" destination="tZo-2X-Gjb" id="M2Z-ft-l7F"/>
+                <outlet property="textfieldLabel" destination="Ry3-Yg-fAT" id="POL-BH-IkQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="111"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="usernameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ry3-Yg-fAT">
+                    <rect key="frame" x="16" y="5" width="354" height="17.666666666666668"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXF-lq-NBp" customClass="FormView" customModule="OrderFoodApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="25.666666666666671" width="386" height="58"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ewl-KF-wjW">
+                            <rect key="frame" x="10" y="4" width="368" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tZo-2X-Gjb">
+                                    <rect key="frame" x="0.0" y="0.0" width="368" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nap-zY-D0b">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="Apw-44-wOa"/>
+                                        <constraint firstAttribute="height" constant="50" id="Obz-Va-teo"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="9WR-sZ-Nxg"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Ewl-KF-wjW" firstAttribute="top" secondItem="VXF-lq-NBp" secondAttribute="top" constant="4" id="52o-Io-DJe"/>
+                        <constraint firstAttribute="bottom" secondItem="Ewl-KF-wjW" secondAttribute="bottom" constant="4" id="LAI-tE-t49"/>
+                        <constraint firstItem="Ewl-KF-wjW" firstAttribute="centerY" secondItem="VXF-lq-NBp" secondAttribute="centerY" id="Yck-WW-O9v"/>
+                        <constraint firstAttribute="trailing" secondItem="Ewl-KF-wjW" secondAttribute="trailing" constant="8" id="cdk-5B-h7F"/>
+                        <constraint firstItem="Ewl-KF-wjW" firstAttribute="leading" secondItem="VXF-lq-NBp" secondAttribute="leading" constant="10" id="dmv-Dd-nAg"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxn-GV-shl" userLabel="errorLabel">
+                    <rect key="frame" x="16" y="88.666666666666671" width="354" height="14"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zxn-GV-shl" secondAttribute="trailing" constant="16" id="CES-qI-N9a"/>
+                <constraint firstAttribute="trailing" secondItem="VXF-lq-NBp" secondAttribute="trailing" id="Olo-FN-2xl"/>
+                <constraint firstItem="Ry3-Yg-fAT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Tbh-7U-UGC"/>
+                <constraint firstAttribute="trailing" secondItem="Ry3-Yg-fAT" secondAttribute="trailing" constant="16" id="bZ0-4F-Kw6"/>
+                <constraint firstItem="Ry3-Yg-fAT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="dlh-A9-RR1"/>
+                <constraint firstItem="zxn-GV-shl" firstAttribute="top" secondItem="VXF-lq-NBp" secondAttribute="bottom" constant="5" id="hMU-mP-Z2A"/>
+                <constraint firstItem="VXF-lq-NBp" firstAttribute="top" secondItem="Ry3-Yg-fAT" secondAttribute="bottom" constant="3" id="iux-05-nU0"/>
+                <constraint firstItem="zxn-GV-shl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="mXd-ll-uF4"/>
+                <constraint firstItem="VXF-lq-NBp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uI1-AH-wKa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="19.847328244274809" y="-218.66197183098592"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

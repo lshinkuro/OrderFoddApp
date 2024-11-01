@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPasswordTextfield" destination="cVP-Kg-X2w" id="bOV-Z2-z9N"/>
+                <outlet property="emailTextfield" destination="hYV-Uv-Wlc" id="uDS-jA-J4k"/>
+                <outlet property="loginButton" destination="ifl-9X-yMp" id="KZF-YW-QFa"/>
+                <outlet property="passwordTextfield" destination="dOP-1J-xhW" id="JXu-VP-Whr"/>
+                <outlet property="registerButton" destination="tGG-4r-cHq" id="cZn-nN-8UX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bg-wZ-FbS">
+                    <rect key="frame" x="30" y="119.00000000000001" width="333" height="28.666666666666671"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome friends, enter your details so lets get starting to order food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHJ-YY-NZp">
+                    <rect key="frame" x="30" y="157.66666666666666" width="333" height="39.666666666666657"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ehV-i6-hgX">
+                    <rect key="frame" x="16" y="217.33333333333337" width="361" height="295"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-Uv-Wlc" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="85"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="85" id="m6f-ny-rZA"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOP-1J-xhW" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="104.99999999999997" width="361" height="85"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="85" id="Y4F-Eu-6Nd"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVP-Kg-X2w" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="209.99999999999997" width="361" height="85.000000000000028"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="85" id="BWD-MA-kEf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGG-4r-cHq">
+                    <rect key="frame" x="16" y="612.33333333333337" width="361" height="58"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="zCk-d9-JwF"/>
+                    </constraints>
+                    <color key="tintColor" red="0.97254901959999995" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Create an Account">
+                        <color key="baseForegroundColor" red="0.97254901959999995" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0o-SY-NhU">
+                    <rect key="frame" x="188" y="684.33333333333337" width="189" height="34.333333333333371"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="have Account ? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1F-UQ-32q">
+                            <rect key="frame" x="0.0" y="0.0" width="123.33333333333333" height="34.333333333333336"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifl-9X-yMp">
+                            <rect key="frame" x="123.33333333333331" y="0.0" width="65.666666666666686" height="34.333333333333336"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Login">
+                                <color key="baseForegroundColor" red="0.97647058819999999" green="0.53333333329999999" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="FoodWhite"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M0o-SY-NhU" secondAttribute="trailing" constant="16" id="88a-Yg-vSB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tGG-4r-cHq" secondAttribute="trailing" constant="16" id="94e-Qe-zOi"/>
+                <constraint firstItem="ehV-i6-hgX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Jqt-m2-hN7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ehV-i6-hgX" secondAttribute="trailing" constant="16" id="MJk-jT-YHZ"/>
+                <constraint firstItem="ehV-i6-hgX" firstAttribute="top" secondItem="NHJ-YY-NZp" secondAttribute="bottom" constant="20" id="WUn-wT-YMd"/>
+                <constraint firstItem="NHJ-YY-NZp" firstAttribute="top" secondItem="5Bg-wZ-FbS" secondAttribute="bottom" constant="10" id="XAt-YT-FzF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Bg-wZ-FbS" secondAttribute="trailing" constant="30" id="hhv-oZ-IQT"/>
+                <constraint firstItem="tGG-4r-cHq" firstAttribute="top" secondItem="ehV-i6-hgX" secondAttribute="bottom" constant="100" id="hnQ-xq-4mW"/>
+                <constraint firstItem="5Bg-wZ-FbS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="iEA-h8-wcj"/>
+                <constraint firstItem="NHJ-YY-NZp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="jMv-nR-n1Z"/>
+                <constraint firstAttribute="trailing" secondItem="NHJ-YY-NZp" secondAttribute="trailing" constant="30" id="kMd-6O-jqn"/>
+                <constraint firstItem="5Bg-wZ-FbS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="lOh-F4-qxv"/>
+                <constraint firstItem="M0o-SY-NhU" firstAttribute="top" secondItem="tGG-4r-cHq" secondAttribute="bottom" constant="14" id="svq-Eu-hhb"/>
+                <constraint firstItem="tGG-4r-cHq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="upn-aY-osN"/>
+            </constraints>
+            <point key="canvasLocation" x="48.091603053435115" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="FoodWhite">
+            <color red="0.97299998998641968" green="0.98400002717971802" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
