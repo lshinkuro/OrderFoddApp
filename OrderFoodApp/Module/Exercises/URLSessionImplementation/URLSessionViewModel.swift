@@ -12,7 +12,7 @@ import RxRelay
 class URLSessionViewModel: BaseViewModel {
     
     let networkManager = NetworkManager.shared
-    let appService = APIManager.shared
+    let appService = NetworkManager.shared
 
 
     var onLoading:  ((_ loading: StateLoading?) -> Void)?

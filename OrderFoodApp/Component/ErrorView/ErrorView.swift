@@ -14,14 +14,11 @@ protocol ErrorViewDelegate {
 class ErrorView: ReusableViewFrame {
 
     @IBOutlet weak var imgView: UIImageView!
-    
     @IBOutlet weak var errorLabel: UILabel!
-    
     @IBOutlet weak var errorButton: UIButton!
     
     var delegate: ErrorViewDelegate?
 
-    
     //MARK: use load nibs if setting by programatically
     // MARK: - Initializer
     override init(frame: CGRect) {

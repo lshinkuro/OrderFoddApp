@@ -79,18 +79,7 @@ class CoreDataManager {
          task.title = newTitle
          saveContext()
      }
-    
-    // Fetch tasks
-    func fetchTaskss() -> [PersonModel] {
-        let request: NSFetchRequest<PersonModel> = PersonModel.fetchRequest()
-        do {
-            return try context.fetch(request)
-        } catch {
-            print("Failed to fetch tasks: \(error)")
-            return []
-        }
-    }
-    
+        
 
 }
 

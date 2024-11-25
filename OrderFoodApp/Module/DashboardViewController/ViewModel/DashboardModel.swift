@@ -58,7 +58,7 @@ struct FoodItem: Hashable, Codable {
 struct PromoFoodData: Codable {
     let name: String
     let image: String
-    let diskonCharge: Double
+    var diskonCharge: Double? = nil
 }
 
 struct AdsFoodData: Codable {

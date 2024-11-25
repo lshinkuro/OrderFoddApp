@@ -14,7 +14,7 @@ class DashboardViewModel: BaseViewModel {
     private let manager = ThreadManager.shared
     
     var foodsModel = BehaviorRelay<FoodModel?>(value: nil)
-    let appService = APIManager.shared
+    let appService = NetworkManager.shared
         
     override init() {}
     
@@ -27,7 +27,8 @@ class DashboardViewModel: BaseViewModel {
                 self.loadingState.accept(.finished)
                 self.foodsModel.accept(data)
      
-            case .failure(_):
+            case .failure(let err):
+                print("error: \(err)")
                 self.loadingState.accept(.failed)
             }
         }

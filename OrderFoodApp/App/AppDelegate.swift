@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAnalytics
 import FirebaseCore
 import FirebaseStorage
+import FirebaseCrashlytics
 import IQKeyboardManagerSwift
 import netfox
 import FLEX
@@ -23,9 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         setTabbar()
         FirebaseApp.configure()
+        
+        Crashlytics.crashlytics().setCrashlyticsCollectionEnabled(true)
         // Untuk Swift
         FirebaseConfiguration.shared.setLoggerLevel(.debug)
-        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.isEnabled = true
         NFX.sharedInstance().start()
         return true
     }

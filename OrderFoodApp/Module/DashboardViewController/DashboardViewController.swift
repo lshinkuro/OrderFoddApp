@@ -5,18 +5,22 @@
 //  Created by Phincon on 30/09/24.
 //
 
+import AppIntents
 import UIKit
 import SwiftUI
 import RxSwift
 import SkeletonView
 import Toast
 
-/*@available(iOS 13.0, *)
- struct ViewController_Previews: PreviewProvider {
- static var previews: some View {
- previewViewController(DashboardViewController())
- }
- }*/
+
+
+//@available(iOS 13.0, *)
+// struct ViewController_Previews: PreviewProvider {
+//     static var previews: some View {
+//     previewViewController(DashboardViewController())
+//     }
+// }
+
 
 enum FoodDashboardType: Int , CaseIterable{
     case category = 0
@@ -60,7 +64,18 @@ class DashboardViewController: BaseViewController {
         bindingData()
         setupRefreshControl()
         receiveNotifCenter()
+        
+        let button = UIButton(type: .roundedRect)
+         button.frame = CGRect(x: 20, y: 50, width: 100, height: 30)
+         button.setTitle("Test Crash", for: [])
+         button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), for: .touchUpInside)
+         view.addSubview(button)
     }
+    
+    @IBAction func crashButtonTapped(_ sender: AnyObject) {
+          let numbers = [0]
+          let _ = numbers[1]
+      }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -103,9 +118,11 @@ class DashboardViewController: BaseViewController {
         vm.foodsModel.asObservable().subscribe(onNext: { [weak self] result in
             guard let self = self, let validData = result else {
                 return }
-            self.dataFood = validData
-            self.tableView.reloadData()
-            self.tableView.refreshControl?.endRefreshing()
+            DispatchQueue.main.async {
+                self.dataFood = validData
+                self.tableView.reloadData()
+                self.tableView.refreshControl?.endRefreshing()
+            }
         }).disposed(by: disposeBag)
         
         vm.loadingState.asObservable().subscribe(onNext: {[weak self] state in
@@ -138,7 +155,6 @@ class DashboardViewController: BaseViewController {
         tableView.estimatedSectionFooterHeight = 0
         
         menuButton.addTarget(self, action: #selector(actionTapMenu), for: .touchUpInside)
-        
     }
     
     

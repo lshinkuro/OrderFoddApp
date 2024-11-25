@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import MidtransKit
+
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -16,6 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
+        setupMidtransConfig()
         
         RemoteConfigManager.shared.fetchAndStoreRemoteConfig()
 
@@ -59,6 +62,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
          self.window = window
          UINavigationBar.appearance().isHidden = false
          }*/
+    }
+    
+    private func setupMidtransConfig() {
+        MidtransConfig.shared().setClientKey("SB-Mid-client-DMzFzhAUqMIxUcTC", environment: .sandbox, merchantServerURL:"https://merchant-url-sandbox.com"
+      )
+
+        //enable logger for debugging purpose
+      MidtransNetworkLogger.shared()?.startLogging()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

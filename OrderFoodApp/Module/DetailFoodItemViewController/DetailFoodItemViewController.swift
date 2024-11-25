@@ -68,7 +68,7 @@ class DetailFoodItemViewController: UIViewController {
             CartService.shared.addToCart(food: foodItem)
             let config = ToastViewConfiguration(subtitleNumberOfLines: 0)
             let toast = Toast.default(
-                image: UIImage(named: foodItem.image)!,
+                image: UIImage(named: foodItem.image) ?? UIImage(),
                 title: "Berhasil",
                 subtitle: "\(foodItem.name) telah ditambahkan ke keranjang",
                 viewConfig: config

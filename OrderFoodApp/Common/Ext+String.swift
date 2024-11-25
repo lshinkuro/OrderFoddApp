@@ -400,6 +400,17 @@ extension String {
             return self
         }
     }
+    
+    func highlightText(_ searchText: String) -> NSAttributedString {
+        let attributedText = NSMutableAttributedString(string: self)
+        
+        if let range = self.lowercased().range(of: searchText.lowercased(), options: .caseInsensitive) {
+            let nsRange = NSRange(range, in: self)
+            attributedText.addAttribute(.backgroundColor, value: UIColor.yellow, range: nsRange)
+        }
+        
+        return attributedText
+    }
 }
 
 extension HTTPURLResponse {

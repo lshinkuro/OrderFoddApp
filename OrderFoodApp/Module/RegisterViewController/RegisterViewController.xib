@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPasswordTextfield" destination="cVP-Kg-X2w" id="bOV-Z2-z9N"/>
+                <outlet property="emailTextfield" destination="hYV-Uv-Wlc" id="uDS-jA-J4k"/>
+                <outlet property="loginButton" destination="ifl-9X-yMp" id="KZF-YW-QFa"/>
+                <outlet property="passwordTextfield" destination="dOP-1J-xhW" id="JXu-VP-Whr"/>
+                <outlet property="registerButton" destination="tGG-4r-cHq" id="cZn-nN-8UX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="800"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S85-ma-cyU">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="800"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90S-P6-p0N">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0o-SY-NhU">
+                                    <rect key="frame" x="30" y="820.33333333333337" width="333" height="34.333333333333371"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="have Account ? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1F-UQ-32q">
+                                            <rect key="frame" x="0.0" y="0.0" width="123.33333333333333" height="34.333333333333336"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifl-9X-yMp">
+                                            <rect key="frame" x="123.33333333333336" y="0.0" width="209.66666666666663" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Login">
+                                                <color key="baseForegroundColor" red="0.97647058819999999" green="0.53333333329999999" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </buttonConfiguration>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ehV-i6-hgX">
+                                    <rect key="frame" x="16" y="118.33333333333331" width="361" height="610"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iwj-1g-aMf" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="85"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="85" id="E9f-0N-txN"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="els-jJ-Ur9" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="105" width="361" height="85"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="85" id="Ya0-sB-6Jd"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-Uv-Wlc" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="210" width="361" height="85"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="85" id="j8e-L8-tF9"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5j-xX-4Lb" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="315" width="361" height="85"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="85" id="xg6-yw-e6n"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOP-1J-xhW" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="420.00000000000006" width="361" height="85"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="85" id="ODi-AP-KjE"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVP-Kg-X2w" customClass="CustomInputField" customModule="OrderFoodApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="525" width="361" height="85"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="85" id="qNJ-HT-Fpt"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGG-4r-cHq">
+                                    <rect key="frame" x="16" y="758.33333333333337" width="361" height="48"/>
+                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="u2o-p6-6LN"/>
+                                    </constraints>
+                                    <color key="tintColor" red="0.97254901959999995" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Create an Account">
+                                        <color key="baseForegroundColor" red="0.97254901959999995" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nx1-yu-ZoD">
+                                    <rect key="frame" x="30" y="22" width="333" height="76.333333333333329"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bg-wZ-FbS">
+                                            <rect key="frame" x="0.0" y="0.0" width="333" height="28.666666666666668"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome friends, enter your details so lets get starting to order food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHJ-YY-NZp">
+                                            <rect key="frame" x="0.0" y="36.666666666666671" width="333" height="39.666666666666671"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="nx1-yu-ZoD" firstAttribute="leading" secondItem="90S-P6-p0N" secondAttribute="leading" constant="30" id="1Kd-ZY-yTQ"/>
+                                <constraint firstAttribute="trailing" secondItem="M0o-SY-NhU" secondAttribute="trailing" constant="30" id="5kG-tR-VC8"/>
+                                <constraint firstItem="ehV-i6-hgX" firstAttribute="leading" secondItem="90S-P6-p0N" secondAttribute="leading" constant="16" id="AoC-tS-ndZ"/>
+                                <constraint firstItem="M0o-SY-NhU" firstAttribute="leading" secondItem="90S-P6-p0N" secondAttribute="leading" constant="30" id="DCd-5e-ahM"/>
+                                <constraint firstItem="tGG-4r-cHq" firstAttribute="leading" secondItem="90S-P6-p0N" secondAttribute="leading" constant="16" id="MQE-Bn-1ho"/>
+                                <constraint firstAttribute="height" constant="900" id="NDv-j4-b2K"/>
+                                <constraint firstAttribute="trailing" secondItem="tGG-4r-cHq" secondAttribute="trailing" constant="16" id="bUQ-N5-Pq9"/>
+                                <constraint firstItem="ehV-i6-hgX" firstAttribute="top" secondItem="nx1-yu-ZoD" secondAttribute="bottom" constant="20" id="cd6-WQ-cQM"/>
+                                <constraint firstAttribute="trailing" secondItem="nx1-yu-ZoD" secondAttribute="trailing" constant="30" id="j0z-JC-gSn"/>
+                                <constraint firstItem="M0o-SY-NhU" firstAttribute="top" secondItem="tGG-4r-cHq" secondAttribute="bottom" constant="14" id="kCx-ny-5iu"/>
+                                <constraint firstAttribute="trailing" secondItem="ehV-i6-hgX" secondAttribute="trailing" constant="16" id="vfZ-Ak-xzW"/>
+                                <constraint firstItem="nx1-yu-ZoD" firstAttribute="top" secondItem="90S-P6-p0N" secondAttribute="top" constant="22" id="vx7-pf-5CO"/>
+                                <constraint firstItem="tGG-4r-cHq" firstAttribute="top" secondItem="ehV-i6-hgX" secondAttribute="bottom" constant="30" id="xTI-Nm-ZcE"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="90S-P6-p0N" secondAttribute="bottom" id="Ve0-y9-x8W"/>
+                        <constraint firstAttribute="trailing" secondItem="90S-P6-p0N" secondAttribute="trailing" constant="-8" id="ZKX-pp-z3o"/>
+                        <constraint firstItem="90S-P6-p0N" firstAttribute="top" secondItem="S85-ma-cyU" secondAttribute="top" id="jDI-QC-jiC"/>
+                        <constraint firstItem="90S-P6-p0N" firstAttribute="centerX" secondItem="S85-ma-cyU" secondAttribute="centerX" id="rVd-Ne-CVQ"/>
+                        <constraint firstItem="90S-P6-p0N" firstAttribute="leading" secondItem="S85-ma-cyU" secondAttribute="leading" id="v3A-K1-nPJ"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="FoodWhite"/>
+            <constraints>
+                <constraint firstItem="S85-ma-cyU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8T9-g6-dVG"/>
+                <constraint firstItem="S85-ma-cyU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="QtJ-Xd-48B"/>
+                <constraint firstItem="S85-ma-cyU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ypw-3s-VBk"/>
+                <constraint firstItem="S85-ma-cyU" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="aLe-d5-VWI"/>
+                <constraint firstAttribute="bottom" secondItem="S85-ma-cyU" secondAttribute="bottom" id="t6E-cL-oov"/>
+                <constraint firstItem="S85-ma-cyU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="vjS-a7-NqG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="48.091603053435115" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="FoodWhite">
+            <color red="0.97299998998641968" green="0.98400002717971802" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -14,12 +14,63 @@ class ChartViewController: BaseViewController {
     @IBOutlet weak var totalPriceStackView: UIStackView!
     @IBOutlet weak var paymentButton: GradientColorButton!
     
-    private var cartItems: [(food: FoodItem, quantity: Int)] = []
     lazy var emptyStateView = EmptyStateView(frame: tableView.frame)
+    private var cartItems: [(food: FoodItem, quantity: Int)] = []
+    let viewModel = ChartViewModel()
+    
+    var orderItems: [OrderItem] {
+        return cartItems.map { item in
+            OrderItem(
+                id: 3,
+                name: "Pizza",
+                price: 100000,
+                quantity: item.quantity
+            )
+        }
+    }
+    
+    var total: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        bindData()
+    }
+    
+    func bindData() {
+        viewModel.orderModel
+            .asObservable()
+            .subscribe(onNext: { [weak self] dataItem in
+                guard let self = self else { return }
+                guard let dataItem = dataItem else { return }
+                DispatchQueue.main.async {
+                    let token = dataItem.transaction.token
+                    
+                    let vc = MidtransViewController()
+                    vc.token = token
+                    vc.hidesBottomBarWhenPushed = true
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+                
+            }).disposed(by: disposeBag)
+        
+        viewModel.loadingState.asObservable().subscribe(onNext: { loading in
+//            guard let self = self else { return }
+            DispatchQueue.main.async {
+                switch loading {
+                case .loading:
+                    print("loading")
+                case .failed:
+                    print("gagal request")
+                case .finished:
+                    print("selesai request")
+                default:
+                    break
+                }
+            }
+            
+        }).disposed(by: disposeBag)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,10 +96,14 @@ class ChartViewController: BaseViewController {
         paymentButton.addTarget(self, action: #selector(actionCheckout), for: .touchUpInside)
     }
     
+    
+    
+    
     @objc func actionCheckout() {
-        showCustomPIN {
-            print("test")
-        }
+        createOrder()
+//        showCustomPIN {
+//            print("test")
+//        }
     }
     
     private func loadCartItems() {
@@ -59,8 +114,9 @@ class ChartViewController: BaseViewController {
         tableView.reloadData()
     }
     
+    
     private func updateTotalPrice() {
-        let total = cartItems.reduce(0) { $0 + $1.food.price * Double($1.quantity) }
+        total = cartItems.reduce(0) { $0 + $1.food.price * Double($1.quantity) }
         totalPriceLabel.text = "Rp \(String(total).convertToCurrencyWithDecimal())"
         updateEmptyStateView()
     }
@@ -83,6 +139,19 @@ class ChartViewController: BaseViewController {
                 emptyStateView.isHidden = true
             }
         }
+    }
+    
+    
+    func createOrder() {
+        let orderParam = CreateOrderParam(email: "test@gmail.com",
+                                          items: [OrderItem(
+                                            id: 3,
+                                            name: "Pizza",
+                                            price: 100000,
+                                            quantity: 1
+                                        )],
+                                          amount: 100000)
+        viewModel.createOrder(param: orderParam)
     }
     
     

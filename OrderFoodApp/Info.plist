@@ -2,12 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>We need to access your camera to scan barcodes</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>App membutuhkan akses lokasi di latar belakang untuk fitur tertentu</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>App membutuhkan akses lokasi untuk memberikan pengalaman terbaik</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>perizinan untuk merekam suara</string>
+	<key>NSApplicationCrashOnExceptions</key>
+	<true/>
+	<key>CFBundleIdentifier</key>
+	<string></string>
 	<key>BASE_URL</key>
 	<string>${BASE_URL}</string>
 	<key>CFBundleURLTypes</key>

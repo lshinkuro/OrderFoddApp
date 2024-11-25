@@ -34,7 +34,7 @@ class LoginViewController: BaseViewController {
             guard let self = self else { return }
             guard let response = response else { return }
             
-            if let token = response.data.token.accessToken {
+            if let token = response.data.token {
                 self.storeTokenInKeychain(token)
                 DispatchQueue.main.async {
                     self.showMainAppScreen()
@@ -60,6 +60,14 @@ class LoginViewController: BaseViewController {
                 default:
                     break
                 }
+            }
+        }
+        
+        viewModel.onError = { [weak self] error in
+            guard let self = self else { return }
+            guard let error = error else { return }
+            DispatchQueue.main.async {
+                self.handleError(error)
             }
         }
         
@@ -102,7 +110,8 @@ class LoginViewController: BaseViewController {
         
         if sender == loginButton {
             //logicLogin()
-            logicLogin()
+//            logicLogin()
+            logicLoginByeAPI()
         } else if sender == registerButton {
             self.coordinator?.showRegister()
         } else {

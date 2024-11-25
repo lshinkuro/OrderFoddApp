@@ -147,7 +147,7 @@ extension MainTabBarController {
     
     func getPathForTabBar() -> UIBezierPath {
         let holeWidth: CGFloat = 170
-        let holeHeight: CGFloat = btnMiddle.frame.height + 30 // Sesuaikan ketinggian lengkungan agar tidak terlalu menonjol
+        let _: CGFloat = btnMiddle.frame.height + 30 // Sesuaikan ketinggian lengkungan agar tidak terlalu menonjol
         let frameWidth = self.tabBar.bounds.width
         let frameHeight = self.tabBar.bounds.height + 40
         let leftXUntilHole = (frameWidth / 2 - holeWidth / 2)

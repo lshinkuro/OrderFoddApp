@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="OrderFoodApp" customModuleProvider="target">
             <connections>
+                <outlet property="tooltipBtn" destination="nPi-Zx-bz5" id="zpE-T0-jxk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,11 +22,23 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_navbar" translatesAutoresizingMaskIntoConstraints="NO" id="e5u-EE-Zm2" customClass="RoundedHeader" customModule="OrderFoodApp" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="105"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPi-Zx-bz5">
+                    <rect key="frame" x="16" y="408.66666666666669" width="40" height="35"/>
+                    <color key="backgroundColor" red="0.26171221550000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Mdv-Vl-hU7"/>
+                        <constraint firstAttribute="width" constant="40" id="WCe-w0-DfV"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="address"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="FoodWhite"/>
             <constraints>
+                <constraint firstItem="nPi-Zx-bz5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ftb-nf-NmI"/>
                 <constraint firstItem="e5u-EE-Zm2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GLj-fr-RCO"/>
+                <constraint firstItem="nPi-Zx-bz5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GpV-4z-k3P"/>
                 <constraint firstItem="e5u-EE-Zm2" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.123123" id="Zfw-Gc-yrd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e5u-EE-Zm2" secondAttribute="trailing" id="aZ5-Ze-R09"/>
                 <constraint firstItem="e5u-EE-Zm2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ubv-qL-ZTS"/>
@@ -35,6 +47,7 @@
         </view>
     </objects>
     <resources>
+        <image name="address" width="18" height="24"/>
         <image name="color_navbar" width="2096" height="512"/>
         <namedColor name="FoodWhite">
             <color red="0.97299998998641968" green="0.98400002717971802" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

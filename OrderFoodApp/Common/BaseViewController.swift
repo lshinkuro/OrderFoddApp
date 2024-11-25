@@ -16,11 +16,11 @@ class BaseViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     var player: AVAudioPlayer?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureKeyboard()
-   
+        
     }
     
     
@@ -28,7 +28,7 @@ class BaseViewController: UIViewController {
         super.viewWillAppear(animated)
         let welcomeMessage = RemoteConfigManager.shared.versionApp
         let generalBC = RemoteConfigManager.shared.generalBackroundColor
-
+        
         
         print("Welcome Message: \(welcomeMessage)")
         print("generalBC: \(generalBC)")
@@ -86,7 +86,7 @@ class BaseViewController: UIViewController {
     
     func addAlert(title: String, message: String, completion: (() -> Void)?) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-
+        
         // Add an action for "OK" button
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             completion?()
@@ -97,7 +97,7 @@ class BaseViewController: UIViewController {
     
     func showCustomPIN(completion: (() -> Void)? = nil) {
         let alertVC = CustomPinViewController()
-    
+        
         alertVC.modalTransitionStyle = .crossDissolve
         alertVC.modalPresentationStyle = .fullScreen
         alertVC.onCorrectPINEntered = {
@@ -109,10 +109,11 @@ class BaseViewController: UIViewController {
     }
     
     func configureKeyboard() {
-        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.isEnabled = true
         IQKeyboardManager.shared.resignOnTouchOutside = true
         IQKeyboardManager.shared.enableAutoToolbar = true
         IQKeyboardManager.shared.toolbarConfiguration.placeholderConfiguration.showPlaceholder = false
         IQKeyboardManager.shared.toolbarConfiguration.tintColor = .foodBlack80
     }
+    
 }

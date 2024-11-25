@@ -124,18 +124,25 @@ class ExampleSnapkitViewController: UIViewController {
     
     func actionView(){
         editProfileButton.rx.tap.subscribe { _ in
-            let fpc = CustomFPC()
-            let vc = ExampleFPCViewController()
-            fpc.delegate = self
-            fpc.setupAppearance()
-            vc.heightFPC.subscribe = { [weak self] value in
-                guard self != nil, let height = value else { return }
-                fpc.layout = FloatingPanelContentFitLayout(heightOfContent: height)
-                fpc.invalidateLayout()
-            }
-            fpc.set(contentViewController: vc)
-            self.present(fpc, animated: true, completion: nil)
+//            let promoVC = PromoCodeViewController()
+//            promoVC.delegate = self
+//            self.navigationController?.pushViewController(promoVC, animated: true)
+            self.show()
         }.disposed(by: bag)
+    }
+    
+    func show() {
+        let fpc = CustomFPC()
+        let vc = FilterViewController()
+        fpc.delegate = self
+        fpc.setupAppearance()
+        vc.heightFPC.subscribe = { [weak self] value in
+            guard self != nil, let height = value else { return }
+            fpc.layout = FloatingPanelContentFitLayout(heightOfContent: height)
+            fpc.invalidateLayout()
+        }
+        fpc.set(contentViewController: vc)
+        self.present(fpc, animated: true, completion: nil)
     }
     
     
@@ -145,10 +152,10 @@ class ExampleSnapkitViewController: UIViewController {
 extension ExampleSnapkitViewController: FloatingPanelControllerDelegate {
     func floatingPanelDidMove(_ fpc: FloatingPanelController) {
         let loc = fpc.surfaceLocation
-        let minY = fpc.surfaceLocation(for: .half).y
+        let minY = fpc.surfaceLocation(for: .full).y
 
         let maxY: CGFloat
-        maxY = fpc.surfaceLocation(for: .half).y
+        maxY = fpc.surfaceLocation(for: .full).y
         fpc.surfaceLocation = CGPoint(x: loc.x, y: min(max(loc.y, minY), maxY))
     }
     
@@ -156,6 +163,12 @@ extension ExampleSnapkitViewController: FloatingPanelControllerDelegate {
         if targetState.pointee == .tip {
             vc.dismiss(animated: true, completion: nil)
         }
+    }
+}
+
+extension ExampleSnapkitViewController: PromoCodeViewControllerDelegate {
+    func didSelectPromo(_ promo: PromoCode) {
+        nameLabel.text = promo.description
     }
 }
 

@@ -87,7 +87,7 @@ class NetworkManager: NSObject, URLSessionDelegate {
             // Load your local certificate
             if let certPath = Bundle.main.path(forResource: "google", ofType: "cer"),
                let certData = try? Data(contentsOf: URL(fileURLWithPath: certPath)),
-               let certificate = SecCertificateCreateWithData(nil, certData as CFData) {
+               let _ = SecCertificateCreateWithData(nil, certData as CFData) {
                 
                 // Compare the server certificate with the local certificate
                 let serverCert = SecTrustCopyCertificateChain(serverTrust)

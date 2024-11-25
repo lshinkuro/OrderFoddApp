@@ -169,8 +169,8 @@ class RxSwiftImplementationViewController: BaseViewController {
         //
         //        }).disposed(by: disposeBag)
         
-        name.subscribe(onNext: { [weak self] text in
-            guard let self = self else { return }
+        name.subscribe(onNext: { text in
+//            guard let self = self else { return }
             print("Text field updated: \(text)")
         }).disposed(by: disposeBag)
     }

@@ -9,4 +9,4 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 
-BASE_URL = http:/api.orderfoodapp.co.id/api
+BASE_URL = https:/phincon-academy-api.onrender.com
