@@ -9,4 +9,7 @@
 
 
 "title_food_app"  = "Food App";
+"welcome_message" = "Welcome";
 "welcome" = "Welcome %@ your point is %@";
+"logout_button" = "logout";
+

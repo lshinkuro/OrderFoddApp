@@ -7,6 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3607659B2D3DF3EE00505922 /* TestModularFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360765992D3DF3EE00505922 /* TestModularFrameworkViewController.swift */; };
+		3607659C2D3DF3EE00505922 /* TestModularFrameworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3607659A2D3DF3EE00505922 /* TestModularFrameworkViewController.xib */; };
+		360766B32D3E342700505922 /* Optimization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766B22D3E342700505922 /* Optimization.swift */; };
+		360766BA2D3F573400505922 /* ShoeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766B92D3F573400505922 /* ShoeItem.swift */; };
+		360766BC2D3F575900505922 /* ShoeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766BB2D3F575900505922 /* ShoeListViewModel.swift */; };
+		360766BE2D3F576500505922 /* ShoeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766BD2D3F576500505922 /* ShoeDetailViewModel.swift */; };
+		360766C02D3F577C00505922 /* ShoeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766BF2D3F577C00505922 /* ShoeListViewController.swift */; };
+		360766C22D3F578A00505922 /* ShoeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766C12D3F578A00505922 /* ShoeDetailViewController.swift */; };
+		360766C42D3F579A00505922 /* ShoeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766C32D3F579A00505922 /* ShoeService.swift */; };
+		360766C82D40EB8100505922 /* ExampleMapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766C62D40EB8100505922 /* ExampleMapKitViewController.swift */; };
+		360766C92D40EB8100505922 /* ExampleMapKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360766C72D40EB8100505922 /* ExampleMapKitViewController.xib */; };
+		360766CC2D410F1A00505922 /* PaymentMethodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766CB2D410F1A00505922 /* PaymentMethodeViewController.swift */; };
+		360766CE2D4224EA00505922 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766CD2D4224EA00505922 /* DeviceManager.swift */; };
+		360766D22D43468E00505922 /* TableViewLanjutanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766D02D43468E00505922 /* TableViewLanjutanViewController.swift */; };
+		360766D32D43468E00505922 /* TableViewLanjutanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360766D12D43468E00505922 /* TableViewLanjutanViewController.xib */; };
+		360766D62D4372CC00505922 /* MultipleCustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766D42D4372CC00505922 /* MultipleCustomCellViewController.swift */; };
+		360766D72D4372CC00505922 /* MultipleCustomCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360766D52D4372CC00505922 /* MultipleCustomCellViewController.xib */; };
+		360766DA2D4372EA00505922 /* TextAndImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766D92D4372EA00505922 /* TextAndImageCell.swift */; };
+		360766DC2D43730600505922 /* HeadlineAndDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766DB2D43730600505922 /* HeadlineAndDescriptionCell.swift */; };
+		360766DE2D43777300505922 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766DD2D43777300505922 /* ItemCollectionViewCell.swift */; };
+		360766E02D4377DA00505922 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766DF2D4377DA00505922 /* MenuTableViewCell.swift */; };
+		360766E52D4C72DF00505922 /* CollectionViewLanjutanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766E32D4C72DF00505922 /* CollectionViewLanjutanViewController.swift */; };
+		360766E62D4C72DF00505922 /* CollectionViewLanjutanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360766E42D4C72DF00505922 /* CollectionViewLanjutanViewController.xib */; };
+		360766E92D4C73AB00505922 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766E72D4C73AB00505922 /* MyCollectionViewCell.swift */; };
+		360766EA2D4C73AB00505922 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360766E82D4C73AB00505922 /* MyCollectionViewCell.xib */; };
+		360766ED2D4C743E00505922 /* MyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766EB2D4C743E00505922 /* MyHeaderView.swift */; };
+		360766EE2D4C743E00505922 /* MyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360766EC2D4C743E00505922 /* MyHeaderView.xib */; };
+		360766F02D4C783E00505922 /* FoodCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766EF2D4C783E00505922 /* FoodCollectionCell.swift */; };
+		360766F22D4C792B00505922 /* MySectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766F12D4C792B00505922 /* MySectionHeaderView.swift */; };
+		360766F42D4C79B500505922 /* MultipleCustomCollectionCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766F32D4C79B500505922 /* MultipleCustomCollectionCellViewController.swift */; };
+		360766F72D4C7DB900505922 /* CustomGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766F62D4C7DB900505922 /* CustomGridLayout.swift */; };
+		360766FC2D4C822900505922 /* DragDropCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766FA2D4C822900505922 /* DragDropCollectionViewViewController.swift */; };
+		360766FD2D4C822900505922 /* DragDropCollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360766FB2D4C822900505922 /* DragDropCollectionViewViewController.xib */; };
+		360767002D4C879000505922 /* DiffableCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360766FE2D4C879000505922 /* DiffableCollectionViewViewController.swift */; };
+		360767012D4C879000505922 /* DiffableCollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360766FF2D4C879000505922 /* DiffableCollectionViewViewController.xib */; };
+		360767042D4C87ED00505922 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360767032D4C87ED00505922 /* BookModel.swift */; };
+		360767062D4C881700505922 /* BookCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360767052D4C881700505922 /* BookCollectionCell.swift */; };
+		360767092D4C8D3A00505922 /* CompositionalCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360767072D4C8D3A00505922 /* CompositionalCollectionViewViewController.swift */; };
+		3607670A2D4C8D3A00505922 /* CompositionalCollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360767082D4C8D3A00505922 /* CompositionalCollectionViewViewController.xib */; };
 		36121DD72CB0E06A00FD8E8F /* RoundedHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36121DD62CB0E06A00FD8E8F /* RoundedHeader.swift */; };
 		36121DD92CB0E18E00FD8E8F /* Ext+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36121DD82CB0E18E00FD8E8F /* Ext+UINavigationItem.swift */; };
 		36121DE92CB0E28400FD8E8F /* Ext+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36121DE82CB0E28400FD8E8F /* Ext+UIFont.swift */; };
@@ -78,6 +117,24 @@
 		365CFD232CB504CB00180496 /* TodoListFireStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CFD222CB504CB00180496 /* TodoListFireStoreModel.swift */; };
 		365CFD272CB5272700180496 /* NSAttributeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365CFD262CB5272700180496 /* NSAttributeViewController.xib */; };
 		365CFD282CB5272700180496 /* NSAttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CFD252CB5272700180496 /* NSAttributeViewController.swift */; };
+		36677FF82D097642007A046E /* Ext+bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36677FF72D097642007A046E /* Ext+bundle.swift */; };
+		36677FFB2D097AF3007A046E /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36677FF92D097AF2007A046E /* Montserrat-Regular.ttf */; };
+		36677FFC2D097AF3007A046E /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36677FFA2D097AF3007A046E /* Montserrat-Bold.ttf */; };
+		3667804A2D0C41E6007A046E /* DeepLinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366780492D0C41E6007A046E /* DeepLinkManager.swift */; };
+		3667811C2D12FAE6007A046E /* ExampleHomepageBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667811B2D12FAE6007A046E /* ExampleHomepageBankApp.swift */; };
+		366781922D360D2C007A046E /* MoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366781912D360D2C007A046E /* MoveViewController.swift */; };
+		366781952D364409007A046E /* PromoViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366781942D364408007A046E /* PromoViewControllerV2.swift */; };
+		366781982D36AF7A007A046E /* ProfilesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366781972D36AF7A007A046E /* ProfilesVC.swift */; };
+		3667819C2D38E7AB007A046E /* Instructions in Frameworks */ = {isa = PBXBuildFile; productRef = 3667819B2D38E7AB007A046E /* Instructions */; };
+		366781A02D38E7CA007A046E /* ExampleCoachmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667819E2D38E7CA007A046E /* ExampleCoachmarkViewController.swift */; };
+		366781A12D38E7CA007A046E /* ExampleCoachmarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3667819F2D38E7CA007A046E /* ExampleCoachmarkViewController.xib */; };
+		366781A32D38EE38007A046E /* CoachmarkManualVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366781A22D38EE38007A046E /* CoachmarkManualVC.swift */; };
+		366781A52D38EE5D007A046E /* CoachMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366781A42D38EE5D007A046E /* CoachMark.swift */; };
+		366781A82D38FFF6007A046E /* TooltipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366781A72D38FFF6007A046E /* TooltipViewController.swift */; };
+		366781AB2D3902A3007A046E /* EasyTipView in Frameworks */ = {isa = PBXBuildFile; productRef = 366781AA2D3902A3007A046E /* EasyTipView */; };
+		366781AD2D3902AE007A046E /* TooltipWithLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366781AC2D3902AE007A046E /* TooltipWithLibrary.swift */; };
+		366781B02D3A0B08007A046E /* ExampleTabCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366781AF2D3A0B08007A046E /* ExampleTabCollectionViewController.swift */; };
+		366781B22D3A408C007A046E /* FeatureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366781B12D3A408C007A046E /* FeatureListViewController.swift */; };
 		3667C9D02CC0E75F007E6E28 /* RxSwiftImplementationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667C9CE2CC0E75F007E6E28 /* RxSwiftImplementationViewController.swift */; };
 		3667C9D12CC0E75F007E6E28 /* RxSwiftImplementationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3667C9CF2CC0E75F007E6E28 /* RxSwiftImplementationViewController.xib */; };
 		3667C9D32CC0FFF0007E6E28 /* RxSwiftImplementationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667C9D22CC0FFF0007E6E28 /* RxSwiftImplementationViewModel.swift */; };
@@ -129,6 +186,10 @@
 		367C78BF2CD387AA004F5B72 /* BookStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367C78BD2CD387AA004F5B72 /* BookStoreViewController.xib */; };
 		367C78C32CD4A819004F5B72 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367C78C12CD4A819004F5B72 /* MapKitViewController.swift */; };
 		367C78C42CD4A819004F5B72 /* MapKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367C78C22CD4A819004F5B72 /* MapKitViewController.xib */; };
+		36A0C6072D54A9DA0031A944 /* ExampleInjectSwiftUIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0C6062D54A9DA0031A944 /* ExampleInjectSwiftUIVC.swift */; };
+		36A0C6092D54B1D80031A944 /* BaseHostingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0C6082D54B1D80031A944 /* BaseHostingTableViewCell.swift */; };
+		36A0C60B2D54B27E0031A944 /* SwiftUICellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0C60A2D54B27E0031A944 /* SwiftUICellView.swift */; };
+		36A0C60E2D5706350031A944 /* TermsAgreementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A0C60D2D5706350031A944 /* TermsAgreementVC.swift */; };
 		36C52B662CAA458B0027E55A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C52B652CAA458B0027E55A /* AppDelegate.swift */; };
 		36C52B682CAA458B0027E55A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C52B672CAA458B0027E55A /* SceneDelegate.swift */; };
 		36C52B6D2CAA458B0027E55A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 36C52B6C2CAA458B0027E55A /* Base */; };
@@ -256,9 +317,66 @@
 		36D8B4782CED93EF0027D851 /* BankResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B4772CED93EF0027D851 /* BankResponseModel.swift */; };
 		36D8B47B2CEDBDD20027D851 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 36D8B47A2CEDBDD20027D851 /* Starscream */; };
 		36D8B47E2CEDBDF20027D851 /* RealTimeWebSocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B47D2CEDBDF20027D851 /* RealTimeWebSocketViewController.swift */; };
+		36D8B48E2CF754180027D851 /* YoloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B48D2CF754180027D851 /* YoloViewController.swift */; };
+		36D8B4902CF759410027D851 /* YOLOv3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B48F2CF759410027D851 /* YOLOv3.mlpackage */; };
+		36D8B4932CF8EBD90027D851 /* MoneyExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B4922CF8EBD90027D851 /* MoneyExchange.swift */; };
+		36D8B4952CF8EC150027D851 /* MoneyExchangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B4942CF8EC150027D851 /* MoneyExchangeViewModel.swift */; };
+		36D8B4982CFDF3860027D851 /* ExampleGridList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B4972CFDF3860027D851 /* ExampleGridList.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		360765EA2D3DF9FB00505922 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		360765992D3DF3EE00505922 /* TestModularFrameworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModularFrameworkViewController.swift; sourceTree = "<group>"; };
+		3607659A2D3DF3EE00505922 /* TestModularFrameworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestModularFrameworkViewController.xib; sourceTree = "<group>"; };
+		360766B22D3E342700505922 /* Optimization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optimization.swift; sourceTree = "<group>"; };
+		360766B92D3F573400505922 /* ShoeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeItem.swift; sourceTree = "<group>"; };
+		360766BB2D3F575900505922 /* ShoeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeListViewModel.swift; sourceTree = "<group>"; };
+		360766BD2D3F576500505922 /* ShoeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDetailViewModel.swift; sourceTree = "<group>"; };
+		360766BF2D3F577C00505922 /* ShoeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeListViewController.swift; sourceTree = "<group>"; };
+		360766C12D3F578A00505922 /* ShoeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDetailViewController.swift; sourceTree = "<group>"; };
+		360766C32D3F579A00505922 /* ShoeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeService.swift; sourceTree = "<group>"; };
+		360766C62D40EB8100505922 /* ExampleMapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleMapKitViewController.swift; sourceTree = "<group>"; };
+		360766C72D40EB8100505922 /* ExampleMapKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleMapKitViewController.xib; sourceTree = "<group>"; };
+		360766CB2D410F1A00505922 /* PaymentMethodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodeViewController.swift; sourceTree = "<group>"; };
+		360766CD2D4224EA00505922 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		360766D02D43468E00505922 /* TableViewLanjutanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewLanjutanViewController.swift; sourceTree = "<group>"; };
+		360766D12D43468E00505922 /* TableViewLanjutanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewLanjutanViewController.xib; sourceTree = "<group>"; };
+		360766D42D4372CC00505922 /* MultipleCustomCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleCustomCellViewController.swift; sourceTree = "<group>"; };
+		360766D52D4372CC00505922 /* MultipleCustomCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultipleCustomCellViewController.xib; sourceTree = "<group>"; };
+		360766D92D4372EA00505922 /* TextAndImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAndImageCell.swift; sourceTree = "<group>"; };
+		360766DB2D43730600505922 /* HeadlineAndDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineAndDescriptionCell.swift; sourceTree = "<group>"; };
+		360766DD2D43777300505922 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		360766DF2D4377DA00505922 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		360766E32D4C72DF00505922 /* CollectionViewLanjutanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLanjutanViewController.swift; sourceTree = "<group>"; };
+		360766E42D4C72DF00505922 /* CollectionViewLanjutanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewLanjutanViewController.xib; sourceTree = "<group>"; };
+		360766E72D4C73AB00505922 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		360766E82D4C73AB00505922 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		360766EB2D4C743E00505922 /* MyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHeaderView.swift; sourceTree = "<group>"; };
+		360766EC2D4C743E00505922 /* MyHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyHeaderView.xib; sourceTree = "<group>"; };
+		360766EF2D4C783E00505922 /* FoodCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionCell.swift; sourceTree = "<group>"; };
+		360766F12D4C792B00505922 /* MySectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySectionHeaderView.swift; sourceTree = "<group>"; };
+		360766F32D4C79B500505922 /* MultipleCustomCollectionCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleCustomCollectionCellViewController.swift; sourceTree = "<group>"; };
+		360766F62D4C7DB900505922 /* CustomGridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridLayout.swift; sourceTree = "<group>"; };
+		360766FA2D4C822900505922 /* DragDropCollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropCollectionViewViewController.swift; sourceTree = "<group>"; };
+		360766FB2D4C822900505922 /* DragDropCollectionViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DragDropCollectionViewViewController.xib; sourceTree = "<group>"; };
+		360766FE2D4C879000505922 /* DiffableCollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableCollectionViewViewController.swift; sourceTree = "<group>"; };
+		360766FF2D4C879000505922 /* DiffableCollectionViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiffableCollectionViewViewController.xib; sourceTree = "<group>"; };
+		360767032D4C87ED00505922 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		360767052D4C881700505922 /* BookCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionCell.swift; sourceTree = "<group>"; };
+		360767072D4C8D3A00505922 /* CompositionalCollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalCollectionViewViewController.swift; sourceTree = "<group>"; };
+		360767082D4C8D3A00505922 /* CompositionalCollectionViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompositionalCollectionViewViewController.xib; sourceTree = "<group>"; };
 		36121DD62CB0E06A00FD8E8F /* RoundedHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedHeader.swift; sourceTree = "<group>"; };
 		36121DD82CB0E18E00FD8E8F /* Ext+UINavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UINavigationItem.swift"; sourceTree = "<group>"; };
 		36121DDB2CB0E1DE00FD8E8F /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -331,6 +449,25 @@
 		365CFD222CB504CB00180496 /* TodoListFireStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListFireStoreModel.swift; sourceTree = "<group>"; };
 		365CFD252CB5272700180496 /* NSAttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributeViewController.swift; sourceTree = "<group>"; };
 		365CFD262CB5272700180496 /* NSAttributeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSAttributeViewController.xib; sourceTree = "<group>"; };
+		36677FF42D094C2F007A046E /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		36677FF52D094C30007A046E /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		36677FF62D094C31007A046E /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		36677FF72D097642007A046E /* Ext+bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+bundle.swift"; sourceTree = "<group>"; };
+		36677FF92D097AF2007A046E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		36677FFA2D097AF3007A046E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		366780492D0C41E6007A046E /* DeepLinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkManager.swift; sourceTree = "<group>"; };
+		3667811B2D12FAE6007A046E /* ExampleHomepageBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleHomepageBankApp.swift; sourceTree = "<group>"; };
+		366781912D360D2C007A046E /* MoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveViewController.swift; sourceTree = "<group>"; };
+		366781942D364408007A046E /* PromoViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoViewControllerV2.swift; sourceTree = "<group>"; };
+		366781972D36AF7A007A046E /* ProfilesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesVC.swift; sourceTree = "<group>"; };
+		3667819E2D38E7CA007A046E /* ExampleCoachmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCoachmarkViewController.swift; sourceTree = "<group>"; };
+		3667819F2D38E7CA007A046E /* ExampleCoachmarkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleCoachmarkViewController.xib; sourceTree = "<group>"; };
+		366781A22D38EE38007A046E /* CoachmarkManualVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachmarkManualVC.swift; sourceTree = "<group>"; };
+		366781A42D38EE5D007A046E /* CoachMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachMark.swift; sourceTree = "<group>"; };
+		366781A72D38FFF6007A046E /* TooltipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipViewController.swift; sourceTree = "<group>"; };
+		366781AC2D3902AE007A046E /* TooltipWithLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipWithLibrary.swift; sourceTree = "<group>"; };
+		366781AF2D3A0B08007A046E /* ExampleTabCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTabCollectionViewController.swift; sourceTree = "<group>"; };
+		366781B12D3A408C007A046E /* FeatureListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureListViewController.swift; sourceTree = "<group>"; };
 		3667C9CE2CC0E75F007E6E28 /* RxSwiftImplementationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftImplementationViewController.swift; sourceTree = "<group>"; };
 		3667C9CF2CC0E75F007E6E28 /* RxSwiftImplementationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxSwiftImplementationViewController.xib; sourceTree = "<group>"; };
 		3667C9D22CC0FFF0007E6E28 /* RxSwiftImplementationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftImplementationViewModel.swift; sourceTree = "<group>"; };
@@ -384,6 +521,10 @@
 		367C78BD2CD387AA004F5B72 /* BookStoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookStoreViewController.xib; sourceTree = "<group>"; };
 		367C78C12CD4A819004F5B72 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
 		367C78C22CD4A819004F5B72 /* MapKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapKitViewController.xib; sourceTree = "<group>"; };
+		36A0C6062D54A9DA0031A944 /* ExampleInjectSwiftUIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleInjectSwiftUIVC.swift; sourceTree = "<group>"; };
+		36A0C6082D54B1D80031A944 /* BaseHostingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHostingTableViewCell.swift; sourceTree = "<group>"; };
+		36A0C60A2D54B27E0031A944 /* SwiftUICellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICellView.swift; sourceTree = "<group>"; };
+		36A0C60D2D5706350031A944 /* TermsAgreementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAgreementVC.swift; sourceTree = "<group>"; };
 		36C52B622CAA458B0027E55A /* OrderFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36C52B652CAA458B0027E55A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36C52B672CAA458B0027E55A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -491,6 +632,11 @@
 		36D8B4752CED92680027D851 /* HomePageBankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageBankViewModel.swift; sourceTree = "<group>"; };
 		36D8B4772CED93EF0027D851 /* BankResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankResponseModel.swift; sourceTree = "<group>"; };
 		36D8B47D2CEDBDF20027D851 /* RealTimeWebSocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeWebSocketViewController.swift; sourceTree = "<group>"; };
+		36D8B48D2CF754180027D851 /* YoloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloViewController.swift; sourceTree = "<group>"; };
+		36D8B48F2CF759410027D851 /* YOLOv3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = YOLOv3.mlpackage; sourceTree = "<group>"; };
+		36D8B4922CF8EBD90027D851 /* MoneyExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyExchange.swift; sourceTree = "<group>"; };
+		36D8B4942CF8EC150027D851 /* MoneyExchangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyExchangeViewModel.swift; sourceTree = "<group>"; };
+		36D8B4972CFDF3860027D851 /* ExampleGridList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGridList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -509,11 +655,13 @@
 				36D8B3D62CDCA7E90027D851 /* MidtransKit in Frameworks */,
 				365CFD212CB5047E00180496 /* FirebaseFirestore in Frameworks */,
 				36D8B3AB2CD9E86B0027D851 /* FirebaseFirestore in Frameworks */,
+				3667819C2D38E7AB007A046E /* Instructions in Frameworks */,
 				36D8B3C92CD9EBED0027D851 /* RxRelay in Frameworks */,
 				36D8B3CB2CD9EBED0027D851 /* RxSwift in Frameworks */,
 				36D8B3C42CD9EB8A0027D851 /* SnapKit in Frameworks */,
 				36D8B3D12CD9EC5C0027D851 /* Kingfisher in Frameworks */,
 				36D8B3B82CD9EB260027D851 /* FloatingPanel in Frameworks */,
+				366781AB2D3902A3007A046E /* EasyTipView in Frameworks */,
 				36D8B3BE2CD9EB460027D851 /* SkeletonView in Frameworks */,
 				36D8B3AF2CD9E86B0027D851 /* FirebaseStorage in Frameworks */,
 				365CFD1A2CB4F10C00180496 /* FirebaseStorage in Frameworks */,
@@ -532,9 +680,169 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		360765982D3DF3D300505922 /* ExampleModular */ = {
+			isa = PBXGroup;
+			children = (
+				360765992D3DF3EE00505922 /* TestModularFrameworkViewController.swift */,
+				3607659A2D3DF3EE00505922 /* TestModularFrameworkViewController.xib */,
+			);
+			path = ExampleModular;
+			sourceTree = "<group>";
+		};
+		3607663B2D3E061F00505922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		360766B12D3E341900505922 /* Optimization */ = {
+			isa = PBXGroup;
+			children = (
+				360766B22D3E342700505922 /* Optimization.swift */,
+			);
+			path = Optimization;
+			sourceTree = "<group>";
+		};
+		360766B42D3F56C200505922 /* ExampleMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				360766B82D3F56E900505922 /* Services */,
+				360766B72D3F56E400505922 /* Views */,
+				360766B62D3F56D600505922 /* ViewModels */,
+				360766B52D3F56CE00505922 /* Models */,
+			);
+			path = ExampleMVVM;
+			sourceTree = "<group>";
+		};
+		360766B52D3F56CE00505922 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				360766B92D3F573400505922 /* ShoeItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		360766B62D3F56D600505922 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				360766BB2D3F575900505922 /* ShoeListViewModel.swift */,
+				360766BD2D3F576500505922 /* ShoeDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		360766B72D3F56E400505922 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				360766BF2D3F577C00505922 /* ShoeListViewController.swift */,
+				360766C12D3F578A00505922 /* ShoeDetailViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		360766B82D3F56E900505922 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				360766C32D3F579A00505922 /* ShoeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		360766C52D40EB6900505922 /* ExampleMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				360766C62D40EB8100505922 /* ExampleMapKitViewController.swift */,
+				360766C72D40EB8100505922 /* ExampleMapKitViewController.xib */,
+			);
+			path = ExampleMapKit;
+			sourceTree = "<group>";
+		};
+		360766CA2D410E9E00505922 /* ExamplePayment */ = {
+			isa = PBXGroup;
+			children = (
+				360766CB2D410F1A00505922 /* PaymentMethodeViewController.swift */,
+			);
+			path = ExamplePayment;
+			sourceTree = "<group>";
+		};
+		360766CF2D43466500505922 /* TableViewPartII */ = {
+			isa = PBXGroup;
+			children = (
+				360766D82D4372D300505922 /* Cell */,
+				360766D02D43468E00505922 /* TableViewLanjutanViewController.swift */,
+				360766D12D43468E00505922 /* TableViewLanjutanViewController.xib */,
+				360766D42D4372CC00505922 /* MultipleCustomCellViewController.swift */,
+				360766D52D4372CC00505922 /* MultipleCustomCellViewController.xib */,
+			);
+			path = TableViewPartII;
+			sourceTree = "<group>";
+		};
+		360766D82D4372D300505922 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				360766D92D4372EA00505922 /* TextAndImageCell.swift */,
+				360766DB2D43730600505922 /* HeadlineAndDescriptionCell.swift */,
+				360766DD2D43777300505922 /* ItemCollectionViewCell.swift */,
+				360766DF2D4377DA00505922 /* MenuTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		360766E12D4C72A600505922 /* CollectionViewPartII */ = {
+			isa = PBXGroup;
+			children = (
+				360767022D4C87E200505922 /* Model */,
+				360766F52D4C7DA400505922 /* CustomLayout */,
+				360766E22D4C72BF00505922 /* Cell */,
+				360766E32D4C72DF00505922 /* CollectionViewLanjutanViewController.swift */,
+				360766E42D4C72DF00505922 /* CollectionViewLanjutanViewController.xib */,
+				360766F32D4C79B500505922 /* MultipleCustomCollectionCellViewController.swift */,
+				360766FA2D4C822900505922 /* DragDropCollectionViewViewController.swift */,
+				360766FB2D4C822900505922 /* DragDropCollectionViewViewController.xib */,
+				360766FE2D4C879000505922 /* DiffableCollectionViewViewController.swift */,
+				360766FF2D4C879000505922 /* DiffableCollectionViewViewController.xib */,
+				360767072D4C8D3A00505922 /* CompositionalCollectionViewViewController.swift */,
+				360767082D4C8D3A00505922 /* CompositionalCollectionViewViewController.xib */,
+			);
+			path = CollectionViewPartII;
+			sourceTree = "<group>";
+		};
+		360766E22D4C72BF00505922 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				360766E72D4C73AB00505922 /* MyCollectionViewCell.swift */,
+				360766E82D4C73AB00505922 /* MyCollectionViewCell.xib */,
+				360766EB2D4C743E00505922 /* MyHeaderView.swift */,
+				360766EC2D4C743E00505922 /* MyHeaderView.xib */,
+				360766EF2D4C783E00505922 /* FoodCollectionCell.swift */,
+				360766F12D4C792B00505922 /* MySectionHeaderView.swift */,
+				360767052D4C881700505922 /* BookCollectionCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		360766F52D4C7DA400505922 /* CustomLayout */ = {
+			isa = PBXGroup;
+			children = (
+				360766F62D4C7DB900505922 /* CustomGridLayout.swift */,
+			);
+			path = CustomLayout;
+			sourceTree = "<group>";
+		};
+		360767022D4C87E200505922 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				360767032D4C87ED00505922 /* BookModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		36121DDA2CB0E1B200FD8E8F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				36677FFA2D097AF3007A046E /* Montserrat-Bold.ttf */,
+				36677FF92D097AF2007A046E /* Montserrat-Regular.ttf */,
 				365CFCFE2CB3885A00180496 /* NatureBeautyPersonalUse.ttf */,
 				365CFCFB2CB37EF200180496 /* BrownieStencil.ttf */,
 				36121DDB2CB0E1DE00FD8E8F /* OpenSans-Bold.ttf */,
@@ -677,6 +985,23 @@
 		365CFD022CB3B31A00180496 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
+				36A0C60C2D5706210031A944 /* TermsAgreement */,
+				36A0C6052D54A9C30031A944 /* ExampleInjectSwiftUI */,
+				360766E12D4C72A600505922 /* CollectionViewPartII */,
+				360766CF2D43466500505922 /* TableViewPartII */,
+				360766CA2D410E9E00505922 /* ExamplePayment */,
+				360766B42D3F56C200505922 /* ExampleMVVM */,
+				360766B12D3E341900505922 /* Optimization */,
+				360765982D3DF3D300505922 /* ExampleModular */,
+				366781AE2D3A0AF4007A046E /* ExampleTabCollectionView */,
+				366781A62D38FFE4007A046E /* ExampleTooltip */,
+				3667819D2D38E7B1007A046E /* ExampleCoachmarkView */,
+				366781962D36AF15007A046E /* ExampleProf */,
+				366781932D3643EF007A046E /* ExampleGrid */,
+				366781902D360D15007A046E /* ExampleMoveTab */,
+				3667811A2D12FACF007A046E /* ExampleHomepageBankApp */,
+				36D8B4962CFDF3720027D851 /* ExampleGridList */,
+				36D8B4912CF8EBBC0027D851 /* XChangeRate */,
 				36D8B47C2CEDBDDF0027D851 /* ExampleWebSocket */,
 				36D8B4652CED8C040027D851 /* CompositionalLayout */,
 				36D8B4022CEAFB480027D851 /* ApplyPromoCode */,
@@ -699,6 +1024,7 @@
 				365CFD242CB526FE00180496 /* NSAttributeViewController */,
 				365CFD1B2CB5017D00180496 /* TodoListFireStore */,
 				365CFD032CB3B32600180496 /* AnimationVC */,
+				366781B12D3A408C007A046E /* FeatureListViewController.swift */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -729,6 +1055,66 @@
 				365CFD262CB5272700180496 /* NSAttributeViewController.xib */,
 			);
 			path = NSAttributeViewController;
+			sourceTree = "<group>";
+		};
+		3667811A2D12FACF007A046E /* ExampleHomepageBankApp */ = {
+			isa = PBXGroup;
+			children = (
+				3667811B2D12FAE6007A046E /* ExampleHomepageBankApp.swift */,
+			);
+			path = ExampleHomepageBankApp;
+			sourceTree = "<group>";
+		};
+		366781902D360D15007A046E /* ExampleMoveTab */ = {
+			isa = PBXGroup;
+			children = (
+				366781912D360D2C007A046E /* MoveViewController.swift */,
+			);
+			path = ExampleMoveTab;
+			sourceTree = "<group>";
+		};
+		366781932D3643EF007A046E /* ExampleGrid */ = {
+			isa = PBXGroup;
+			children = (
+				366781942D364408007A046E /* PromoViewControllerV2.swift */,
+			);
+			path = ExampleGrid;
+			sourceTree = "<group>";
+		};
+		366781962D36AF15007A046E /* ExampleProf */ = {
+			isa = PBXGroup;
+			children = (
+				366781972D36AF7A007A046E /* ProfilesVC.swift */,
+			);
+			path = ExampleProf;
+			sourceTree = "<group>";
+		};
+		3667819D2D38E7B1007A046E /* ExampleCoachmarkView */ = {
+			isa = PBXGroup;
+			children = (
+				3667819E2D38E7CA007A046E /* ExampleCoachmarkViewController.swift */,
+				3667819F2D38E7CA007A046E /* ExampleCoachmarkViewController.xib */,
+				366781A22D38EE38007A046E /* CoachmarkManualVC.swift */,
+				366781A42D38EE5D007A046E /* CoachMark.swift */,
+			);
+			path = ExampleCoachmarkView;
+			sourceTree = "<group>";
+		};
+		366781A62D38FFE4007A046E /* ExampleTooltip */ = {
+			isa = PBXGroup;
+			children = (
+				366781A72D38FFF6007A046E /* TooltipViewController.swift */,
+				366781AC2D3902AE007A046E /* TooltipWithLibrary.swift */,
+			);
+			path = ExampleTooltip;
+			sourceTree = "<group>";
+		};
+		366781AE2D3A0AF4007A046E /* ExampleTabCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				366781AF2D3A0B08007A046E /* ExampleTabCollectionViewController.swift */,
+			);
+			path = ExampleTabCollectionView;
 			sourceTree = "<group>";
 		};
 		3667C9CD2CC0E738007E6E28 /* RxSwiftImplementation */ = {
@@ -857,10 +1243,29 @@
 		367C78C02CD4A805004F5B72 /* Mapkit */ = {
 			isa = PBXGroup;
 			children = (
+				360766C52D40EB6900505922 /* ExampleMapKit */,
 				367C78C12CD4A819004F5B72 /* MapKitViewController.swift */,
 				367C78C22CD4A819004F5B72 /* MapKitViewController.xib */,
 			);
 			path = Mapkit;
+			sourceTree = "<group>";
+		};
+		36A0C6052D54A9C30031A944 /* ExampleInjectSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				36A0C6062D54A9DA0031A944 /* ExampleInjectSwiftUIVC.swift */,
+				36A0C6082D54B1D80031A944 /* BaseHostingTableViewCell.swift */,
+				36A0C60A2D54B27E0031A944 /* SwiftUICellView.swift */,
+			);
+			path = ExampleInjectSwiftUI;
+			sourceTree = "<group>";
+		};
+		36A0C60C2D5706210031A944 /* TermsAgreement */ = {
+			isa = PBXGroup;
+			children = (
+				36A0C60D2D5706350031A944 /* TermsAgreementVC.swift */,
+			);
+			path = TermsAgreement;
 			sourceTree = "<group>";
 		};
 		36C52B592CAA458B0027E55A = {
@@ -868,6 +1273,7 @@
 			children = (
 				36C52B642CAA458B0027E55A /* OrderFoodApp */,
 				36C52B632CAA458B0027E55A /* Products */,
+				3607663B2D3E061F00505922 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -939,6 +1345,9 @@
 				3667CA272CCA1F1F007E6E28 /* FirebaseAnalyticManager.swift */,
 				3667CA182CC8A306007E6E28 /* FloatingPanelLayout.swift */,
 				367C785F2CCF891A004F5B72 /* Constants.swift */,
+				36677FF72D097642007A046E /* Ext+bundle.swift */,
+				366780492D0C41E6007A046E /* DeepLinkManager.swift */,
+				360766CD2D4224EA00505922 /* DeviceManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -955,6 +1364,7 @@
 		36C52B7C2CAA45E10027E55A /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				36D8B48C2CF753FF0027D851 /* YoloImplementedViewController */,
 				36D8B3D72CDDCD120027D851 /* MidtransViewController */,
 				36C52B8C2CAA4FA90027E55A /* RegisterViewController */,
 				363F2E382CB842E000F6CDB1 /* ResetPasswordViewController */,
@@ -978,6 +1388,7 @@
 		36C52B7D2CAA45F20027E55A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				36D8B48F2CF759410027D851 /* YOLOv3.mlpackage */,
 				3667CA0C2CC78923007E6E28 /* LottieJson */,
 				365CFCCC2CB0EFCC00180496 /* Sound */,
 				365CFCC22CB0E78900180496 /* Localizable */,
@@ -1348,6 +1759,31 @@
 			path = ExampleWebSocket;
 			sourceTree = "<group>";
 		};
+		36D8B48C2CF753FF0027D851 /* YoloImplementedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				36D8B48D2CF754180027D851 /* YoloViewController.swift */,
+			);
+			path = YoloImplementedViewController;
+			sourceTree = "<group>";
+		};
+		36D8B4912CF8EBBC0027D851 /* XChangeRate */ = {
+			isa = PBXGroup;
+			children = (
+				36D8B4922CF8EBD90027D851 /* MoneyExchange.swift */,
+				36D8B4942CF8EC150027D851 /* MoneyExchangeViewModel.swift */,
+			);
+			path = XChangeRate;
+			sourceTree = "<group>";
+		};
+		36D8B4962CFDF3720027D851 /* ExampleGridList */ = {
+			isa = PBXGroup;
+			children = (
+				36D8B4972CFDF3860027D851 /* ExampleGridList.swift */,
+			);
+			path = ExampleGridList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1361,6 +1797,7 @@
 				36C52B602CAA458B0027E55A /* Resources */,
 				04908F135D8EB50DA2BE7A6C /* [CP] Embed Pods Frameworks */,
 				36D8B4072CEC44250027D851 /* ShellScript */,
+				360765EA2D3DF9FB00505922 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1396,6 +1833,8 @@
 				36D8B3D52CDCA7E90027D851 /* MidtransKit */,
 				36D8B4052CEC43910027D851 /* FirebaseCrashlytics */,
 				36D8B47A2CEDBDD20027D851 /* Starscream */,
+				3667819B2D38E7AB007A046E /* Instructions */,
+				366781AA2D3902A3007A046E /* EasyTipView */,
 			);
 			productName = OrderFoodApp;
 			productReference = 36C52B622CAA458B0027E55A /* OrderFoodApp.app */;
@@ -1425,6 +1864,7 @@
 				Base,
 				id,
 				"zh-HK",
+				nl,
 			);
 			mainGroup = 36C52B592CAA458B0027E55A;
 			packageReferences = (
@@ -1441,6 +1881,8 @@
 				36D8B3CF2CD9EC5C0027D851 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				36D8B3D22CDCA7E90027D851 /* XCRemoteSwiftPackageReference "Veritrans-ios-sdk" */,
 				36D8B4792CEDBDD20027D851 /* XCRemoteSwiftPackageReference "Starscream" */,
+				3667819A2D38E7AA007A046E /* XCRemoteSwiftPackageReference "Instructions" */,
+				366781A92D3902A2007A046E /* XCRemoteSwiftPackageReference "EasyTipView" */,
 			);
 			productRefGroup = 36C52B632CAA458B0027E55A /* Products */;
 			projectDirPath = "";
@@ -1463,6 +1905,7 @@
 				363F2E362CB7C6F300F6CDB1 /* CustomPinViewController.xib in Resources */,
 				36C52BCB2CAB9FD70027E55A /* FoodItemDetailCollectionViewCell.xib in Resources */,
 				36C52BC32CAB99F40027E55A /* FoodItemCategoryCollectionViewCell.xib in Resources */,
+				360766C92D40EB8100505922 /* ExampleMapKitViewController.xib in Resources */,
 				363F2E652CBCEC3E00F6CDB1 /* ItemPlaceholderTableViewCell.xib in Resources */,
 				3667CA242CCA0938007E6E28 /* SenderViewController.xib in Resources */,
 				365CFD272CB5272700180496 /* NSAttributeViewController.xib in Resources */,
@@ -1472,14 +1915,17 @@
 				365CFCBD2CB0E67F00180496 /* OpenSans-CondLight.ttf in Resources */,
 				36C52B9C2CAA50F10027E55A /* ProfileViewController.xib in Resources */,
 				36C52BA42CAA51090027E55A /* HistoryOrderViewController.xib in Resources */,
+				36677FFB2D097AF3007A046E /* Montserrat-Regular.ttf in Resources */,
 				3667C9D12CC0E75F007E6E28 /* RxSwiftImplementationViewController.xib in Resources */,
 				3667CA142CC89FDE007E6E28 /* ExampleFPCViewController.xib in Resources */,
+				366781A12D38E7CA007A046E /* ExampleCoachmarkViewController.xib in Resources */,
 				36C52BF42CAD20110027E55A /* PromoFoodItemCollectionViewCell.xib in Resources */,
 				365CFCB92CB0E67500180496 /* OpenSans-Bold.ttf in Resources */,
 				36C52B892CAA4A840027E55A /* LoginViewController.xib in Resources */,
 				363F2E802CBF79D900F6CDB1 /* FreeMeal.xib in Resources */,
 				36C52BB42CAA77800027E55A /* FilterChartItemBottomSheet.xib in Resources */,
 				36C52BFD2CAD92070027E55A /* EmptyStateView.xib in Resources */,
+				360766D72D4372CC00505922 /* MultipleCustomCellViewController.xib in Resources */,
 				36C52C132CAED3F30027E55A /* CustomPopUpViewController.xib in Resources */,
 				36C52C402CAF8C360027E55A /* OnBoardingCollectionViewCell.xib in Resources */,
 				365CFD152CB4DC0300180496 /* RegisterViewController.xib in Resources */,
@@ -1489,6 +1935,7 @@
 				36C52B6F2CAA458C0027E55A /* Assets.xcassets in Resources */,
 				363F2E1F2CB65CEA00F6CDB1 /* AdsViewController.xib in Resources */,
 				365CFD012CB38EFD00180496 /* masha-and-the-bear.mp3 in Resources */,
+				360766E62D4C72DF00505922 /* CollectionViewLanjutanViewController.xib in Resources */,
 				367C78C42CD4A819004F5B72 /* MapKitViewController.xib in Resources */,
 				367C78B42CD36329004F5B72 /* SpecialForYouTableViewCell.xib in Resources */,
 				363F2E612CBCEBC500F6CDB1 /* URLSessionViewController.xib in Resources */,
@@ -1501,9 +1948,13 @@
 				365CFCBF2CB0E68500180496 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				36C52B6D2CAA458B0027E55A /* Base in Resources */,
 				36C52B982CAA50E00027E55A /* DashboardViewController.xib in Resources */,
+				360766FD2D4C822900505922 /* DragDropCollectionViewViewController.xib in Resources */,
 				36C52BBF2CAB96880027E55A /* FoodItemCategoryTableViewCell.xib in Resources */,
 				365CFCB82CB0E67200180496 /* OpenSans-LightItalic.ttf in Resources */,
+				3607670A2D4C8D3A00505922 /* CompositionalCollectionViewViewController.xib in Resources */,
 				365CFCBA2CB0E67700180496 /* OpenSans-BoldItalic.ttf in Resources */,
+				360766EE2D4C743E00505922 /* MyHeaderView.xib in Resources */,
+				360767012D4C879000505922 /* DiffableCollectionViewViewController.xib in Resources */,
 				367C78AF2CD341C4004F5B72 /* QRCodeScanViewController.xib in Resources */,
 				367C78BF2CD387AA004F5B72 /* BookStoreViewController.xib in Resources */,
 				36C52BF02CAD1F8B0027E55A /* PromoFoodTableViewCell.xib in Resources */,
@@ -1513,13 +1964,17 @@
 				363F2E3B2CB8430200F6CDB1 /* ResetPasswordViewController.xib in Resources */,
 				365CFCBE2CB0E68200180496 /* OpenSans-ExtraBold.ttf in Resources */,
 				367C78B82CD364CB004F5B72 /* SpecialItemTableViewCell.xib in Resources */,
+				3607659C2D3DF3EE00505922 /* TestModularFrameworkViewController.xib in Resources */,
 				36D8B3DB2CDDCD310027D851 /* MidtransViewController.xib in Resources */,
+				360766D32D43468E00505922 /* TableViewLanjutanViewController.xib in Resources */,
 				36C52BAB2CAA5F150027E55A /* ChartItemTableViewCell.xib in Resources */,
 				36C52BD12CABDB180027E55A /* ToolBarView.xib in Resources */,
 				365CFCC02CB0E68700180496 /* OpenSans-Italic.ttf in Resources */,
 				3667CA0E2CC78936007E6E28 /* loading.json in Resources */,
 				365CFCFC2CB37EF200180496 /* BrownieStencil.ttf in Resources */,
 				3667CA2C2CCA3760007E6E28 /* GoogleService-Info.plist in Resources */,
+				36677FFC2D097AF3007A046E /* Montserrat-Bold.ttf in Resources */,
+				360766EA2D4C73AB00505922 /* MyCollectionViewCell.xib in Resources */,
 				365CFD092CB3B34F00180496 /* AnimationViewController.xib in Resources */,
 				36C52C062CAE6EA20027E55A /* CustomInputField.xib in Resources */,
 				363F2E852CBF9C3100F6CDB1 /* ItemMealTableViewCell.xib in Resources */,
@@ -1604,24 +2059,33 @@
 				3667C9FD2CC74391007E6E28 /* TodoListViewModel.swift in Sources */,
 				36C52BDA2CABE2DA0027E55A /* FormView.swift in Sources */,
 				36C52C492CAF9B330027E55A /* Ext+UITableView.swift in Sources */,
+				360766F22D4C792B00505922 /* MySectionHeaderView.swift in Sources */,
 				365CFD082CB3B34F00180496 /* AnimationViewController.swift in Sources */,
 				367C787F2CD1E259004F5B72 /* ChartCoordinator.swift in Sources */,
 				36C52BE52CABF29B0027E55A /* FoodChartItemTableViewCell.swift in Sources */,
 				365CFD1F2CB501AD00180496 /* TodoListFireStoreViewController.swift in Sources */,
 				365CFD182CB4E7D500180496 /* KeychainHelper.swift in Sources */,
 				36D8B4042CEAFB5A0027D851 /* PromoViewController.swift in Sources */,
+				36677FF82D097642007A046E /* Ext+bundle.swift in Sources */,
 				36C52C472CAF9B290027E55A /* Ext+UICollectionView.swift in Sources */,
+				360766E92D4C73AB00505922 /* MyCollectionViewCell.swift in Sources */,
 				36C52C022CAE38EC0027E55A /* AdsFoodTableViewCell.swift in Sources */,
 				36C52B8B2CAA4E140027E55A /* BaseViewController.swift in Sources */,
 				36C52BE12CABF09B0027E55A /* TodoListViewController.swift in Sources */,
 				367C78622CD08624004F5B72 /* OnBoardingCoordinator.swift in Sources */,
+				366781B22D3A408C007A046E /* FeatureListViewController.swift in Sources */,
 				363F2E582CB9018100F6CDB1 /* BaseViewModel.swift in Sources */,
 				36C52C4D2CAFD71F0027E55A /* ThreadManager.swift in Sources */,
 				36D8B46D2CED90CE0027D851 /* ExpensesCell.swift in Sources */,
+				36D8B4932CF8EBD90027D851 /* MoneyExchange.swift in Sources */,
+				366781922D360D2C007A046E /* MoveViewController.swift in Sources */,
 				3667CA002CC74E22007E6E28 /* ExampleProgramaticallyViewController.swift in Sources */,
+				3667804A2D0C41E6007A046E /* DeepLinkManager.swift in Sources */,
 				36D8B46F2CED90F30027D851 /* PendingTransactionCell.swift in Sources */,
+				366781AD2D3902AE007A046E /* TooltipWithLibrary.swift in Sources */,
 				363F2E442CB8CDC200F6CDB1 /* GradientColorButton.swift in Sources */,
 				36C52B972CAA50E00027E55A /* DashboardViewController.swift in Sources */,
+				36A0C60E2D5706350031A944 /* TermsAgreementVC.swift in Sources */,
 				36D8B3F02CE5ECB60027D851 /* StepQuestionViewController.swift in Sources */,
 				36C52BA32CAA51090027E55A /* HistoryOrderViewController.swift in Sources */,
 				36C52C432CAF8E140027E55A /* OnboardModel.swift in Sources */,
@@ -1631,6 +2095,9 @@
 				36C52C082CAE75850027E55A /* CustomReusableView.swift in Sources */,
 				363F2E2D2CB7B45C00F6CDB1 /* Ext+UIImageView.swift in Sources */,
 				3667CA192CC8A306007E6E28 /* FloatingPanelLayout.swift in Sources */,
+				360766C42D3F579A00505922 /* ShoeService.swift in Sources */,
+				360766BE2D3F576500505922 /* ShoeDetailViewModel.swift in Sources */,
+				360766B32D3E342700505922 /* Optimization.swift in Sources */,
 				363F2E2B2CB7705300F6CDB1 /* ExampleGestureViewController.swift in Sources */,
 				363F2E202CB65CEA00F6CDB1 /* AdsViewController.swift in Sources */,
 				36D8B4732CED91540027D851 /* LayoutSection.swift in Sources */,
@@ -1640,10 +2107,13 @@
 				36C52BC22CAB99F40027E55A /* FoodItemCategoryCollectionViewCell.swift in Sources */,
 				367C78AE2CD341C4004F5B72 /* QRCodeScanViewController.swift in Sources */,
 				367C78642CD08707004F5B72 /* LoginCoordinator.swift in Sources */,
+				360767092D4C8D3A00505922 /* CompositionalCollectionViewViewController.swift in Sources */,
 				367C78852CD1E2E6004F5B72 /* Example3DCoordinator.swift in Sources */,
 				36D8B3F62CE9E3A30027D851 /* FilterManager.swift in Sources */,
 				36C52BCA2CAB9FD70027E55A /* FoodItemDetailCollectionViewCell.swift in Sources */,
 				36C52BCD2CABA74B0027E55A /* DashboardModel.swift in Sources */,
+				36D8B4902CF759410027D851 /* YOLOv3.mlpackage in Sources */,
+				36A0C6072D54A9DA0031A944 /* ExampleInjectSwiftUIVC.swift in Sources */,
 				365CFD232CB504CB00180496 /* TodoListFireStoreModel.swift in Sources */,
 				3667CA0B2CC7870D007E6E28 /* Common.swift in Sources */,
 				365CFCCB2CB0E9AF00180496 /* Ext+String.swift in Sources */,
@@ -1652,27 +2122,39 @@
 				363F2E622CBCEBC500F6CDB1 /* URLSessionViewController.swift in Sources */,
 				367C78602CCF891A004F5B72 /* Constants.swift in Sources */,
 				36C52BAA2CAA5F150027E55A /* ChartItemTableViewCell.swift in Sources */,
+				360766C82D40EB8100505922 /* ExampleMapKitViewController.swift in Sources */,
 				36C52C0A2CAE8E8F0027E55A /* CommonPreviews.swift in Sources */,
 				36C52C542CAFE6890027E55A /* LeftMenuSheetViewController.swift in Sources */,
 				3667CA022CC75511007E6E28 /* ExampleSnapkitViewController.swift in Sources */,
+				3667811C2D12FAE6007A046E /* ExampleHomepageBankApp.swift in Sources */,
 				36C52BBE2CAB96880027E55A /* FoodItemCategoryTableViewCell.swift in Sources */,
 				367C78672CD08853004F5B72 /* MainCoordinator.swift in Sources */,
 				3667CA132CC89FDE007E6E28 /* ExampleFPCViewController.swift in Sources */,
 				3667CA1B2CC90147007E6E28 /* CustomSegmentedControl.swift in Sources */,
+				36A0C60B2D54B27E0031A944 /* SwiftUICellView.swift in Sources */,
 				367C78772CD1DD2C004F5B72 /* RegisterCoordinator.swift in Sources */,
 				36C52B882CAA4A840027E55A /* LoginViewController.swift in Sources */,
 				3667CA092CC78647007E6E28 /* PopUpLoading.swift in Sources */,
+				366781A02D38E7CA007A046E /* ExampleCoachmarkViewController.swift in Sources */,
 				363F2E7C2CBF674400F6CDB1 /* LoginModel.swift in Sources */,
+				360766F42D4C79B500505922 /* MultipleCustomCollectionCellViewController.swift in Sources */,
+				366781B02D3A0B08007A046E /* ExampleTabCollectionViewController.swift in Sources */,
+				360766D62D4372CC00505922 /* MultipleCustomCellViewController.swift in Sources */,
 				36C52C452CAF938F0027E55A /* UserDefaultManager.swift in Sources */,
 				363F2E372CB7C6F300F6CDB1 /* CustomPinViewController.swift in Sources */,
 				36D8B3DD2CE1D7EE0027D851 /* ChartViewModel.swift in Sources */,
 				36D8B47E2CEDBDF20027D851 /* RealTimeWebSocketViewController.swift in Sources */,
 				363F2E6E2CBD00D900F6CDB1 /* EndpointAPI.swift in Sources */,
 				363F2E4D2CB8FC8B00F6CDB1 /* APIManager.swift in Sources */,
+				360766BC2D3F575900505922 /* ShoeListViewModel.swift in Sources */,
+				360766CC2D410F1A00505922 /* PaymentMethodeViewController.swift in Sources */,
 				36C52B902CAA4FE00027E55A /* MainTabBarController.swift in Sources */,
 				367C78812CD1E298004F5B72 /* HistoryCoordinator.swift in Sources */,
 				363F2E5B2CBBBD9E00F6CDB1 /* ErrorView.swift in Sources */,
 				36C52C412CAF8C360027E55A /* OnBoardingCollectionViewCell.swift in Sources */,
+				360766E02D4377DA00505922 /* MenuTableViewCell.swift in Sources */,
+				360766C02D3F577C00505922 /* ShoeListViewController.swift in Sources */,
+				360766F02D4C783E00505922 /* FoodCollectionCell.swift in Sources */,
 				36C52B832CAA47680027E55A /* ViewController.swift in Sources */,
 				36C52C3C2CAF8B3F0027E55A /* OnBoardingViewController.swift in Sources */,
 				36C52BF52CAD20110027E55A /* PromoFoodItemCollectionViewCell.swift in Sources */,
@@ -1680,18 +2162,26 @@
 				363F2E7A2CBF66BA00F6CDB1 /* LoginViewModel.swift in Sources */,
 				365CFCF12CB2BE3800180496 /* Intents.intentdefinition in Sources */,
 				36D8B3F82CE9E3EA0027D851 /* FilterManagerModel.swift in Sources */,
+				36A0C6092D54B1D80031A944 /* BaseHostingTableViewCell.swift in Sources */,
 				36C52B9F2CAA50FB0027E55A /* ChartViewController.swift in Sources */,
+				3607659B2D3DF3EE00505922 /* TestModularFrameworkViewController.swift in Sources */,
 				36D8B4692CED8FBF0027D851 /* HeaderCell.swift in Sources */,
+				360766DA2D4372EA00505922 /* TextAndImageCell.swift in Sources */,
 				3667C9D32CC0FFF0007E6E28 /* RxSwiftImplementationViewModel.swift in Sources */,
 				3667CA072CC75F4E007E6E28 /* Ext+UIStackview.swift in Sources */,
 				36C52BF12CAD1F8B0027E55A /* PromoFoodTableViewCell.swift in Sources */,
 				36D8B3E82CE5D8CD0027D851 /* TooltipManager.swift in Sources */,
+				360766BA2D3F573400505922 /* ShoeItem.swift in Sources */,
+				36D8B48E2CF754180027D851 /* YoloViewController.swift in Sources */,
+				366781A52D38EE5D007A046E /* CoachMark.swift in Sources */,
 				36C52BE82CAC35960027E55A /* ExtUIColor.swift in Sources */,
 				367C787B2CD1DFAC004F5B72 /* DashboardCoordinator.swift in Sources */,
 				363F2E6B2CBCF30300F6CDB1 /* URLSessionModel.swift in Sources */,
 				36D8B4712CED91110027D851 /* TransactionCell.swift in Sources */,
 				367C78B72CD364CB004F5B72 /* SpecialItemTableViewCell.swift in Sources */,
+				360766F72D4C7DB900505922 /* CustomGridLayout.swift in Sources */,
 				363F2E862CBF9C3100F6CDB1 /* ItemMealTableViewCell.swift in Sources */,
+				360767002D4C879000505922 /* DiffableCollectionViewViewController.swift in Sources */,
 				36C52BBA2CAB90BB0027E55A /* CircularProgressView.swift in Sources */,
 				363F2E722CBD01C300F6CDB1 /* NetworkManager.swift in Sources */,
 				3667CA302CCF41B9007E6E28 /* ExampleCryptoKitViewController.swift in Sources */,
@@ -1699,6 +2189,7 @@
 				36C52C142CAED3F30027E55A /* CustomPopUpViewController.swift in Sources */,
 				36C52BF92CAD88B70027E55A /* EmptyStateView.swift in Sources */,
 				363F2E1B2CB6591000F6CDB1 /* CoreDataManager.swift in Sources */,
+				360766DC2D43730600505922 /* HeadlineAndDescriptionCell.swift in Sources */,
 				363F2E782CBF654400F6CDB1 /* ParamaterEndpoint.swift in Sources */,
 				3667CA232CCA0938007E6E28 /* SenderViewController.swift in Sources */,
 				36D8B3F32CE9DB9B0027D851 /* FilterViewController.swift in Sources */,
@@ -1706,21 +2197,29 @@
 				36C52BA62CAA52940027E55A /* AppSettings.swift in Sources */,
 				36C52BF72CAD52C70027E55A /* CustomLayoutCollectionView.swift in Sources */,
 				363F2E692CBCF13400F6CDB1 /* URLSessionViewModel.swift in Sources */,
+				360766C22D3F578A00505922 /* ShoeDetailViewController.swift in Sources */,
+				360766CE2D4224EA00505922 /* DeviceManager.swift in Sources */,
 				3667C9D02CC0E75F007E6E28 /* RxSwiftImplementationViewController.swift in Sources */,
 				36C52C042CAE6E810027E55A /* CustomInputField.swift in Sources */,
 				36D8B3FA2CE9E4750027D851 /* SliderTableViewCell.swift in Sources */,
 				36C52BB32CAA77800027E55A /* FilterChartItemBottomSheet.swift in Sources */,
+				360767062D4C881700505922 /* BookCollectionCell.swift in Sources */,
 				363F2E662CBCEC3E00F6CDB1 /* ItemPlaceholderTableViewCell.swift in Sources */,
 				3667CA172CC8A1B4007E6E28 /* CustomObservable.swift in Sources */,
 				36D8B4762CED92680027D851 /* HomePageBankViewModel.swift in Sources */,
 				36D8B46B2CED90A90027D851 /* BalanceCell.swift in Sources */,
 				36C52BD72CABDD410027E55A /* DetailFoodItemViewController.swift in Sources */,
 				36D8B3FC2CE9E4A90027D851 /* FilterCollectionTableViewCell.swift in Sources */,
+				360767042D4C87ED00505922 /* BookModel.swift in Sources */,
+				36D8B4952CF8EC150027D851 /* MoneyExchangeViewModel.swift in Sources */,
 				363F2E242CB6758500F6CDB1 /* RemoteConfigManager.swift in Sources */,
 				36D8B3ED2CE5DCCA0027D851 /* SwipeCardViewController.swift in Sources */,
+				360766FC2D4C822900505922 /* DragDropCollectionViewViewController.swift in Sources */,
+				366781A82D38FFF6007A046E /* TooltipViewController.swift in Sources */,
 				36D8B3E62CE5C7820027D851 /* TooltipView.swift in Sources */,
 				363F2E422CB8CB7400F6CDB1 /* GradientColorView.swift in Sources */,
 				367C786C2CD13863004F5B72 /* Example3DViewController.swift in Sources */,
+				360766D22D43468E00505922 /* TableViewLanjutanViewController.swift in Sources */,
 				36C52C502CAFDB5A0027E55A /* DashboardViewModel.swift in Sources */,
 				36C6A0FA2CD874B4005A446C /* OrderFoodApp.xcdatamodeld in Sources */,
 				36C52BC62CAB9D200027E55A /* FoodItemDetailTableViewCell.swift in Sources */,
@@ -1731,15 +2230,21 @@
 				36D8B3DA2CDDCD310027D851 /* MidtransViewController.swift in Sources */,
 				36C52B662CAA458B0027E55A /* AppDelegate.swift in Sources */,
 				36C52B9B2CAA50F10027E55A /* ProfileViewController.swift in Sources */,
+				366781952D364409007A046E /* PromoViewControllerV2.swift in Sources */,
 				36C52C0F2CAEAF0F0027E55A /* FloatingIconView.swift in Sources */,
 				367C78BE2CD387AA004F5B72 /* BookStoreViewController.swift in Sources */,
+				366781A32D38EE38007A046E /* CoachmarkManualVC.swift in Sources */,
 				365CFD162CB4DC0300180496 /* RegisterViewController.swift in Sources */,
 				367C78A22CD212FC004F5B72 /* MixSwiftUIViewController.swift in Sources */,
 				367C78C32CD4A819004F5B72 /* MapKitViewController.swift in Sources */,
 				367C78B32CD36329004F5B72 /* SpecialForYouTableViewCell.swift in Sources */,
+				360766ED2D4C743E00505922 /* MyHeaderView.swift in Sources */,
+				360766E52D4C72DF00505922 /* CollectionViewLanjutanViewController.swift in Sources */,
 				36C52BCF2CABDAF50027E55A /* ToolBarView.swift in Sources */,
+				366781982D36AF7A007A046E /* ProfilesVC.swift in Sources */,
 				367C787D2CD1E231004F5B72 /* MainTabBarCoordinator.swift in Sources */,
 				36D8B4782CED93EF0027D851 /* BankResponseModel.swift in Sources */,
+				36D8B4982CFDF3860027D851 /* ExampleGridList.swift in Sources */,
 				367C78A82CD329A9004F5B72 /* GeneralSkeletonTableViewCell.swift in Sources */,
 				36D8B3FE2CE9E5040027D851 /* FilterPinCollectionViewCell.swift in Sources */,
 				36C52BEA2CAC3FB40027E55A /* Ext+UIView.swift in Sources */,
@@ -1749,6 +2254,7 @@
 				365CFD282CB5272700180496 /* NSAttributeViewController.swift in Sources */,
 				36D8B3EA2CE5DCA50027D851 /* CardView.swift in Sources */,
 				36C52BDC2CABEC000027E55A /* ChartService.swift in Sources */,
+				360766DE2D43777300505922 /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1761,6 +2267,7 @@
 				365CFCC82CB0E86100180496 /* id */,
 				365CFCC92CB0E8EE00180496 /* en */,
 				365CFCFA2CB37A0700180496 /* zh-HK */,
+				36677FF62D094C31007A046E /* nl */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1771,6 +2278,7 @@
 				36C52B6C2CAA458B0027E55A /* Base */,
 				365CFCC72CB0E86100180496 /* id */,
 				365CFCF72CB37A0600180496 /* zh-HK */,
+				36677FF52D094C30007A046E /* nl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1781,6 +2289,7 @@
 				36C52B712CAA458C0027E55A /* Base */,
 				365CFCC62CB0E86100180496 /* id */,
 				365CFCF62CB37A0600180496 /* zh-HK */,
+				36677FF42D094C2F007A046E /* nl */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1921,6 +2430,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = YPD3TP4P79;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OrderFoodApp",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OrderFoodApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera to scan barcodes";
@@ -1955,6 +2469,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YPD3TP4P79;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OrderFoodApp",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OrderFoodApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera to scan barcodes";
@@ -2055,6 +2574,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = YPD3TP4P79;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OrderFoodApp",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OrderFoodApp/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera to scan barcodes";
@@ -2106,6 +2630,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3667819A2D38E7AA007A046E /* XCRemoteSwiftPackageReference "Instructions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ephread/Instructions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+		366781A92D3902A2007A046E /* XCRemoteSwiftPackageReference "EasyTipView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/teodorpatras/EasyTipView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
 		36D8B3A32CD9E86B0027D851 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -2236,6 +2776,16 @@
 		365CFD202CB5047E00180496 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FirebaseFirestore;
+		};
+		3667819B2D38E7AB007A046E /* Instructions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3667819A2D38E7AA007A046E /* XCRemoteSwiftPackageReference "Instructions" */;
+			productName = Instructions;
+		};
+		366781AA2D3902A3007A046E /* EasyTipView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 366781A92D3902A2007A046E /* XCRemoteSwiftPackageReference "EasyTipView" */;
+			productName = EasyTipView;
 		};
 		36D8B3A42CD9E86B0027D851 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;

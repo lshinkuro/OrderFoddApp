@@ -111,7 +111,8 @@ class LoginViewController: BaseViewController {
         if sender == loginButton {
             //logicLogin()
 //            logicLogin()
-            logicLoginByeAPI()
+//            logicLoginByeAPI()
+            self.coordinator?.showHomeScreen()
         } else if sender == registerButton {
             self.coordinator?.showRegister()
         } else {

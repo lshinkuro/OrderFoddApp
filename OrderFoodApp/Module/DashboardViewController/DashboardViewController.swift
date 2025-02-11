@@ -51,6 +51,7 @@ class DashboardViewController: BaseViewController {
     let vm = DashboardViewModel()
     
     let floatingIcon = FloatingIconView(image: UIImage(named: "promo1")!)
+    
     lazy var emptyStateView = ErrorView(frame: tableView.frame)
     
     var coordinator: DashboardCoordinator?
@@ -65,11 +66,11 @@ class DashboardViewController: BaseViewController {
         setupRefreshControl()
         receiveNotifCenter()
         
-        let button = UIButton(type: .roundedRect)
-         button.frame = CGRect(x: 20, y: 50, width: 100, height: 30)
-         button.setTitle("Test Crash", for: [])
-         button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), for: .touchUpInside)
-         view.addSubview(button)
+//        let button = UIButton(type: .roundedRect)
+//         button.frame = CGRect(x: 20, y: 50, width: 100, height: 30)
+//         button.setTitle("Test Crash", for: [])
+//         button.addTarget(self, action: #selector(self.crashButtonTapped(_:)), for: .touchUpInside)
+//         view.addSubview(button)
     }
     
     @IBAction func crashButtonTapped(_ sender: AnyObject) {

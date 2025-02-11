@@ -6,7 +6,11 @@
 //
 
 import UIKit
+
+
 import MapKit
+
+
 import CoreLocation
 import RxSwift
 import IQKeyboardManagerSwift
@@ -291,16 +295,6 @@ class MapKitViewController: BaseViewController {
     }
     
     
-    func setRegion(longitude: Double? = 0.0 , latitude: Double? = 0.0) {
-        print("Latitude: \(latitude ?? 0.0), Longitude: \(longitude ?? 0.0)")
-        // Center the map around the specified coordinates
-        
-        let center = CLLocationCoordinate2D(latitude: latitude ?? 0.0 , longitude: longitude ?? 0.0)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
-        
-        self.mapkitView.setRegion(region, animated: true)
-    }
-    
 }
 
 extension MapKitViewController: CLLocationManagerDelegate {
@@ -314,6 +308,16 @@ extension MapKitViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error: \(error.localizedDescription)")
+    }
+    
+    func setRegion(longitude: Double? = 0.0 , latitude: Double? = 0.0) {
+        print("Latitude: \(latitude ?? 0.0), Longitude: \(longitude ?? 0.0)")
+        // Center the map around the specified coordinates
+        
+        let center = CLLocationCoordinate2D(latitude: latitude ?? 0.0 , longitude: longitude ?? 0.0)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+        
+        self.mapkitView.setRegion(region, animated: true)
     }
 }
 
@@ -516,3 +520,6 @@ class CustomAnnotation: NSObject, MKAnnotation {
         self.subtitle = subtitle
     }
 }
+
+
+

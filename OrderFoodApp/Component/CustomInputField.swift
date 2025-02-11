@@ -18,11 +18,12 @@ class CustomInputField: ReusableViewXIB {
     
     @IBOutlet weak var logoImgView: UIImageView!
     
-    //MARK: use load nibs if setting by programatically
+    //MARK: use load nibs if setting by programatically    
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configView()
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         configView()

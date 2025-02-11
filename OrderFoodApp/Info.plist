@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Perizinan Untuk Lokasi</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>perizinan untuk merekam suara</string>
 	<key>NSApplicationCrashOnExceptions</key>
@@ -44,6 +46,7 @@
 		<string>OpenSans-SemiBold.ttf</string>
 		<string>OpenSans-SemiBoldItalic.ttf</string>
 		<string>NatureBeautyPersonalUse.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
@@ -62,5 +65,14 @@
 			</array>
 		</dict>
 	</dict>
+	<key>AssociatedDomains</key>
+	<array>
+		<string>applinks:yourdomain.com</string>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>otherapp</string>
+		<string>anotherapp</string>
+	</array>
 </dict>
 </plist>

@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="OrderFoodApp" customModuleProvider="target">
             <connections>
+                <outlet property="logoutButton" destination="2rM-9d-AaU" id="fFA-Nt-dxy"/>
+                <outlet property="switchButton" destination="YlV-J0-OxA" id="ZjL-Sl-Oy2"/>
+                <outlet property="titleLabel" destination="R8C-4t-NhX" id="DeU-5S-IyT"/>
                 <outlet property="tooltipBtn" destination="nPi-Zx-bz5" id="zpE-T0-jxk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -32,18 +35,55 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" image="address"/>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8C-4t-NhX">
+                    <rect key="frame" x="16" y="169" width="361" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rM-9d-AaU">
+                    <rect key="frame" x="16" y="209.33333333333334" width="361" height="51.000000000000028"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="TzF-mZ-Cxp"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="eij-Xd-S7Q">
+                    <rect key="frame" x="16" y="280.33333333333331" width="361" height="31"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ubah Bahasa " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXQ-6M-M3U">
+                            <rect key="frame" x="0.0" y="0.0" width="112" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YlV-J0-OxA">
+                            <rect key="frame" x="312" y="0.0" width="51" height="31"/>
+                        </switch>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="FoodWhite"/>
             <constraints>
+                <constraint firstItem="2rM-9d-AaU" firstAttribute="top" secondItem="R8C-4t-NhX" secondAttribute="bottom" constant="20" id="4R6-zm-R0a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2rM-9d-AaU" secondAttribute="trailing" constant="16" id="Dau-eQ-A0U"/>
                 <constraint firstItem="nPi-Zx-bz5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ftb-nf-NmI"/>
                 <constraint firstItem="e5u-EE-Zm2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GLj-fr-RCO"/>
                 <constraint firstItem="nPi-Zx-bz5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GpV-4z-k3P"/>
+                <constraint firstItem="eij-Xd-S7Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="HDn-nI-pWu"/>
+                <constraint firstItem="R8C-4t-NhX" firstAttribute="top" secondItem="e5u-EE-Zm2" secondAttribute="bottom" constant="64" id="KyK-c3-0Gs"/>
+                <constraint firstItem="2rM-9d-AaU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="UoL-jh-Awd"/>
+                <constraint firstItem="R8C-4t-NhX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Xvz-Rf-RqR"/>
                 <constraint firstItem="e5u-EE-Zm2" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.123123" id="Zfw-Gc-yrd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e5u-EE-Zm2" secondAttribute="trailing" id="aZ5-Ze-R09"/>
+                <constraint firstItem="eij-Xd-S7Q" firstAttribute="top" secondItem="2rM-9d-AaU" secondAttribute="bottom" constant="20" id="n5a-po-nZp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="R8C-4t-NhX" secondAttribute="trailing" constant="16" id="qlG-Q5-6xi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eij-Xd-S7Q" secondAttribute="trailing" constant="16" id="u2U-N4-nbr"/>
                 <constraint firstItem="e5u-EE-Zm2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ubv-qL-ZTS"/>
             </constraints>
-            <point key="canvasLocation" x="103" y="21"/>
+            <point key="canvasLocation" x="101.5267175572519" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>

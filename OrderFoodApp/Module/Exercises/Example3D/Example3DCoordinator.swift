@@ -18,7 +18,7 @@ class Example3DCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = MapKitViewController()
+        let vc = FeatureListViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 

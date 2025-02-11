@@ -25,11 +25,15 @@ class SwipeCardViewController: UIViewController {
     private func setupMockData() {
         // Add your mock users here
         users = [
-            User(name: "John", age: 28, profession: "Designer", image: UIImage(named: "ads1")!),
-            User(name: "Sarah", age: 25, profession: "Engineer", image: UIImage(named: "ads2")!),
-            User(name: "Mike", age: 30, profession: "Doctor", image: UIImage(named: "promo1")!),
-            User(name: "Emma", age: 27, profession: "Artist", image: UIImage(named: "promo2")!),
-            User(name: "David", age: 29, profession: "Teacher", image: UIImage(named: "promo3")!)
+            User(name: "Ayu", age: 28, profession: "Designer", image: UIImage(named: "cewe1")!),
+            User(name: "Sarah", age: 25, profession: "Engineer", image: UIImage(named: "cewe2")!),
+            User(name: "Bella", age: 30, profession: "Doctor", image: UIImage(named: "cewe3")!),
+            User(name: "Emma", age: 27, profession: "Artist", image: UIImage(named: "cewe4")!),
+            User(name: "Risa", age: 29, profession: "Teacher", image: UIImage(named: "cewe5")!),
+            User(name: "Maya", age: 29, profession: "Teacher", image: UIImage(named: "cewe6")!),
+            User(name: "Vina", age: 29, profession: "Teacher", image: UIImage(named: "cewe7")!),
+            User(name: "Rossa", age: 29, profession: "Teacher", image: UIImage(named: "cewe8")!)
+
         ]
     }
     

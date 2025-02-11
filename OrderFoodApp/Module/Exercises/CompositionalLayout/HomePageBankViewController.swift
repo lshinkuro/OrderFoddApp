@@ -156,6 +156,7 @@ extension HomePageBankViewController {
         dataSource = UICollectionViewDiffableDataSource<SectionBankType, ItemType>(
             collectionView: collectionView
         ) { [weak self] collectionView, indexPath, item in
+            guard let self = self else { return UICollectionViewCell()}
             switch item {
             case .header(let name, let imageUrl):
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HeaderCell.reuseIdentifier, for: indexPath) as! HeaderCell
@@ -219,9 +220,7 @@ extension HomePageBankViewController: UICollectionViewDelegate {
         
         switch item {
         case .header(let name, let imageUrl):
-            
             print(name)
-            
         case .balance(let balance):
             
             print(balance)

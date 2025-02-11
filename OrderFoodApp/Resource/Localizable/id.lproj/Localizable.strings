@@ -8,5 +8,9 @@
 
 
 "title_food_app" = "Food App";
+"welcome_message" = "Selamat Datang";
+
+
 "welcome" = "Selamat Datang %@ point kamu %@";
+"logout_button" = "keluar";
 

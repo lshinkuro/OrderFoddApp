@@ -1,0 +1,84 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SampleFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Helloworld",
+        "printedName": "Helloworld",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Helloworld",
+                "printedName": "SampleFramework.Helloworld",
+                "usr": "s:15SampleFramework10HelloworldC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15SampleFramework10HelloworldCACycfc",
+            "mangledName": "$s15SampleFramework10HelloworldCACycfc",
+            "moduleName": "SampleFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "printMessage",
+            "printedName": "printMessage(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15SampleFramework10HelloworldC12printMessage7messageySS_tF",
+            "mangledName": "$s15SampleFramework10HelloworldC12printMessage7messageySS_tF",
+            "moduleName": "SampleFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15SampleFramework10HelloworldC",
+        "mangledName": "$s15SampleFramework10HelloworldC",
+        "moduleName": "SampleFramework",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

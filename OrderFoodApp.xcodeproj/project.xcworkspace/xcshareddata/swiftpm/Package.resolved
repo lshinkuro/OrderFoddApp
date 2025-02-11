@@ -1,5 +1,5 @@
 {
-  "originHash" : "50e3f62eb380a9d0e12060971075a55e02beb4f6fa09097f9872a5739951e14a",
+  "originHash" : "c7ae27a545d6c78371385c14348ae35f6936c1fe1e9bce5e92937a4ab6c8bafb",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "61b85103a1aeed8218f17c794687781505fbbef5",
         "version" : "11.2.0"
+      }
+    },
+    {
+      "identity" : "easytipview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/teodorpatras/EasyTipView",
+      "state" : {
+        "revision" : "1cba0e75f745da03773cd7092480c5fa8cde4a72",
+        "version" : "2.1.0"
       }
     },
     {
@@ -89,6 +98,15 @@
       "state" : {
         "revision" : "5cfe5f090c982de9c58605d2a82a4fc77b774fbd",
         "version" : "4.1.0"
+      }
+    },
+    {
+      "identity" : "instructions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ephread/Instructions",
+      "state" : {
+        "revision" : "54f50ec058a118107178f641f7475db353080c6d",
+        "version" : "2.3.0"
       }
     },
     {

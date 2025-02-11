@@ -82,6 +82,12 @@ class BaseViewController: UIViewController {
                                    image: "empty-cart-png",
                                    twoButton: false)
         showCustomPopUp(popupData)
+        
+        
+        
+        
+        
+        
     }
     
     func addAlert(title: String, message: String, completion: (() -> Void)?) {
