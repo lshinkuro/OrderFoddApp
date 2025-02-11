@@ -6,3 +6,4 @@ DerivedData/
 .swiftpm/configuration/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
+OrderFoodApp/Resource/YOLOv3.mlpackage/Data/com.apple.CoreML/YOLOv3.mlmodel

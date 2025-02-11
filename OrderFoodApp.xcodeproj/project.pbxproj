@@ -318,7 +318,6 @@
 		36D8B47B2CEDBDD20027D851 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 36D8B47A2CEDBDD20027D851 /* Starscream */; };
 		36D8B47E2CEDBDF20027D851 /* RealTimeWebSocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B47D2CEDBDF20027D851 /* RealTimeWebSocketViewController.swift */; };
 		36D8B48E2CF754180027D851 /* YoloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B48D2CF754180027D851 /* YoloViewController.swift */; };
-		36D8B4902CF759410027D851 /* YOLOv3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B48F2CF759410027D851 /* YOLOv3.mlpackage */; };
 		36D8B4932CF8EBD90027D851 /* MoneyExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B4922CF8EBD90027D851 /* MoneyExchange.swift */; };
 		36D8B4952CF8EC150027D851 /* MoneyExchangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B4942CF8EC150027D851 /* MoneyExchangeViewModel.swift */; };
 		36D8B4982CFDF3860027D851 /* ExampleGridList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B4972CFDF3860027D851 /* ExampleGridList.swift */; };
@@ -633,7 +632,6 @@
 		36D8B4772CED93EF0027D851 /* BankResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankResponseModel.swift; sourceTree = "<group>"; };
 		36D8B47D2CEDBDF20027D851 /* RealTimeWebSocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeWebSocketViewController.swift; sourceTree = "<group>"; };
 		36D8B48D2CF754180027D851 /* YoloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloViewController.swift; sourceTree = "<group>"; };
-		36D8B48F2CF759410027D851 /* YOLOv3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = YOLOv3.mlpackage; sourceTree = "<group>"; };
 		36D8B4922CF8EBD90027D851 /* MoneyExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyExchange.swift; sourceTree = "<group>"; };
 		36D8B4942CF8EC150027D851 /* MoneyExchangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyExchangeViewModel.swift; sourceTree = "<group>"; };
 		36D8B4972CFDF3860027D851 /* ExampleGridList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGridList.swift; sourceTree = "<group>"; };
@@ -1388,7 +1386,6 @@
 		36C52B7D2CAA45F20027E55A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				36D8B48F2CF759410027D851 /* YOLOv3.mlpackage */,
 				3667CA0C2CC78923007E6E28 /* LottieJson */,
 				365CFCCC2CB0EFCC00180496 /* Sound */,
 				365CFCC22CB0E78900180496 /* Localizable */,
@@ -2112,7 +2109,6 @@
 				36D8B3F62CE9E3A30027D851 /* FilterManager.swift in Sources */,
 				36C52BCA2CAB9FD70027E55A /* FoodItemDetailCollectionViewCell.swift in Sources */,
 				36C52BCD2CABA74B0027E55A /* DashboardModel.swift in Sources */,
-				36D8B4902CF759410027D851 /* YOLOv3.mlpackage in Sources */,
 				36A0C6072D54A9DA0031A944 /* ExampleInjectSwiftUIVC.swift in Sources */,
 				365CFD232CB504CB00180496 /* TodoListFireStoreModel.swift in Sources */,
 				3667CA0B2CC7870D007E6E28 /* Common.swift in Sources */,
