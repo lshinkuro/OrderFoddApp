@@ -6,44 +6,56 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
-// Menggunakan mekanisme binding dengan Closure
-class ShoeListViewModel {
+class ShoeListViewModel: BaseViewModel {
     
-    private let service: ShoeService
+    private let service: ShoeUseCaseProtocol
     
     var onStateChange: ((DataState) -> Void)?
     
-    private(set) var shoeItems: [ShoeItem] = []
+    // Output
+    let shoeItems = BehaviorRelay<[ShoeItem]>(value: [])
+    let isLoading = BehaviorRelay<Bool>(value: false)
+    let errorMessage = PublishRelay<String>()
     
-    init(service: ShoeService = ShoeService()) {
+    init(useCase service: ShoeUseCase = ShoeUseCase()) {
         self.service = service
     }
     
-    
     func fetchShoeItems() {
+        isLoading.accept(true)
         onStateChange?(.loading)
-        service.fetchShoeItems { [weak self] result in
-           guard let self = self else { return }
-           DispatchQueue.main.async {
-               switch result {
-               case .success(let items):
-                   self.shoeItems = items
-                   if items.isEmpty {
-                       self.onStateChange?(.empty)
-                   } else {
-                       self.onStateChange?(.success)
-                   }
-               case .failure(let error):
-                   self.onStateChange?(.error(error.localizedDescription))
-               }
-           }
-        }
+        
+        service.fetchShoeItems()
+            .observe(on: MainScheduler.instance)
+            .subscribe(
+                onNext: { [weak self] items in
+                    guard let self = self else { return }
+                    self.isLoading.accept(false)
+                    self.shoeItems.accept(items)
+                    
+                    if items.isEmpty {
+                        self.onStateChange?(.empty)
+                    } else {
+                        self.onStateChange?(.success)
+                    }
+                },
+                onError: { [weak self] error in
+                    guard let self = self else { return }
+                    self.isLoading.accept(false)
+                    self.errorMessage.accept(error.localizedDescription)
+                    self.onStateChange?(.error(error.localizedDescription))
+                }
+            )
+            .disposed(by: bag)
     }
     
     func toggleFavorite(for index: Int) {
-        shoeItems[index].isFavorite.toggle()
-        self.onStateChange?(.success)
+        var updatedItems = shoeItems.value
+        updatedItems[index].isFavorite.toggle()
+        shoeItems.accept(updatedItems)
+        onStateChange?(.success)
     }
 }
-

@@ -7,6 +7,15 @@
 
 import Foundation
 import UIKit
+import SwiftUI
+
+struct CustomHeaderSectionCell_Previews: PreviewProvider {
+    static var previews: some View {
+        previewView(CustomHeaderSectionCell())
+            .frame(width: 100, height: 50) // Atur ukuran tampilan
+    }
+}
+
 
 class CustomHeaderSectionCell: UIView {
 
@@ -22,6 +31,7 @@ class CustomHeaderSectionCell: UIView {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textColor = UIColor(hex: "979797")
+        label.text = "Section Header"
         return label
     }()
     

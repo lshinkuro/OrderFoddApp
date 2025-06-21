@@ -30,7 +30,7 @@ class CoachmarkManualVC: UIViewController {
 
           // Tampilkan Coach Mark hanya pada pertama kali masuk
           if isFirstLaunch {
-              isFirstLaunch = false
+//              isFirstLaunch = false
               startCoachMark()
           }
       }
@@ -51,7 +51,7 @@ class CoachmarkManualVC: UIViewController {
     }
     
     func startCoachMark() {
-        coachMark = CoachMarks(on: view)
+        coachMark = CoachMarks(on: tableView)
         
         // Tentukan elemen-elemen yang akan disorot
         var steps: [(CGRect, String)] = []

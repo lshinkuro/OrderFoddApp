@@ -7,6 +7,14 @@
 
 import Foundation
 import UIKit
+import SwiftUI
+
+//struct CustomButtonView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        previewView(MultiCircularProgressView())
+//            .frame(width: 100, height: 50) // Atur ukuran tampilan
+//    }
+//}
 
 class CircularProgressView: UIView {
     

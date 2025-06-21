@@ -8,6 +8,7 @@
 import UIKit
 import AVFoundation
 import FirebaseStorage
+import SnapKit
 
 class NSAttributeViewController: UIViewController {
     
@@ -27,6 +28,15 @@ class NSAttributeViewController: UIViewController {
     @IBOutlet weak var skipForwardBtn: UIButton!
     @IBOutlet weak var repeatBtn: UIButton!
     
+    let textView: UITextView = {
+        let tv = UITextView()
+        tv.isEditable = false
+        tv.isScrollEnabled = true
+        tv.dataDetectorTypes = .link
+        tv.translatesAutoresizingMaskIntoConstraints = false
+        return tv
+    }()
+    
     var audioPlayer: AVAudioPlayer?
     var progressTimer: Timer?
     
@@ -35,6 +45,14 @@ class NSAttributeViewController: UIViewController {
         super.viewDidLoad()
         toolbarView.titleLabel.text = "Ophelia"
         setup()
+        
+        view.addSubview(textView)
+        
+        textView.snp.makeConstraints { make in
+            make.top.equalTo(repeatBtn.snp.bottom)
+            make.horizontalEdges.equalToSuperview().inset(16)
+            make.bottom.equalToSuperview().inset(20)
+        }
         
     }
     
@@ -68,7 +86,19 @@ class NSAttributeViewController: UIViewController {
 
         // Tetapkan teks berwarna pada label
         titleLabel.attributedText = attrText
+        
+        
+        
 
+        let htmlString = """
+           <ol>
+               <li>Paket berlaku untuk 1 hari sejak jam aktivasi hingga pukul 23.59.</li>
+               <li>Paket berlaku hanya untuk pemakaian domestik (tidak berlaku untuk pemakaian luar negeri yang akan dikenakan biaya terpisah).</li>
+               <li>Setelah melewati kuota yang disediakan, pelanggan akan dikenakan tarif dasar internet.</li>
+               <li>Harga paket dapat berubah sewaktu-waktu sesuai dengan kebijakan harga yang ditetapkan oleh Telkomsel.</li>
+           </ol>
+           """
+        textView.attributedText = htmlString.htmlToAttributedString
         
     }
     

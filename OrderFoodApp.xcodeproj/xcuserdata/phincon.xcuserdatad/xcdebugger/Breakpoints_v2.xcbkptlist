@@ -132,12 +132,12 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "7772A92B-B3BD-448B-A833-1482F425E494 - 1239207678ffc300"
+                  uuid = "7772A92B-B3BD-448B-A833-1482F425E494 - 6cddd6c58780bc85"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "OrderFoodApp.MidtransViewController.paymentViewController(_: Swift.Optional&lt;__C.MidtransUIPaymentViewController&gt;, paymentSuccess: Swift.Optional&lt;__C.MidtransTransactionResult&gt;) -&gt; ()"
-                  moduleName = "OrderFoodApp"
+                  moduleName = "OrderFoodApp.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/phincon/Documents/PhinconAcademy/Akademik/Project/OrderFoodApp/OrderFoodApp/Module/MidtransViewController/MidtransViewController.swift"
                   startingColumnNumber = "9223372036854775807"
@@ -146,12 +146,12 @@
                   endingLineNumber = "87">
                </Location>
                <Location
-                  uuid = "7772A92B-B3BD-448B-A833-1482F425E494 - 9d10548e3e102c9d"
+                  uuid = "7772A92B-B3BD-448B-A833-1482F425E494 - e3f4a23dc16f5318"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 () -&gt; () in OrderFoodApp.MidtransViewController.paymentViewController(_: Swift.Optional&lt;__C.MidtransUIPaymentViewController&gt;, paymentSuccess: Swift.Optional&lt;__C.MidtransTransactionResult&gt;) -&gt; ()"
-                  moduleName = "OrderFoodApp"
+                  moduleName = "OrderFoodApp.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/phincon/Documents/PhinconAcademy/Akademik/Project/OrderFoodApp/OrderFoodApp/Module/MidtransViewController/MidtransViewController.swift"
                   startingColumnNumber = "9223372036854775807"
@@ -160,38 +160,6 @@
                   endingLineNumber = "88">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C002D775-80CD-4DF8-BE78-E7A9A4782ACD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrderFoodApp/Module/DashboardViewController/DashboardViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "273"
-            endingLineNumber = "273"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "82B53D3F-9AEC-44F3-A98E-F40B4D528E84"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrderFoodApp/Module/DashboardViewController/DashboardCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "showDetail(with:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

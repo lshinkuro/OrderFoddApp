@@ -107,8 +107,7 @@ class PopUpLoading {
             backgroundCover.addSubview(animationView)
    
             animationView.snp.makeConstraints {
-                $0.width.equalTo(widthHeight)
-                $0.height.equalTo(widthHeight)
+                $0.width.height.equalTo(widthHeight)
                 $0.centerX.equalTo(window.snp.centerX)
                 $0.centerY.equalTo(window.snp.centerY)
             }

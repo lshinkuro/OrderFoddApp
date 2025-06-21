@@ -20,14 +20,14 @@ class YoloViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     }()
     
     // Inisialisasi langsung visionModel dengan YOLOv3
-    private let visionModel: VNCoreMLModel = {
-        do {
-            let model = try YOLOv3(configuration: .init()).model
-            return try VNCoreMLModel(for: model)
-        } catch {
-            fatalError("Failed to load YOLOv3 model: \(error)")
-        }
-    }()
+//    private let visionModel: VNCoreMLModel = {
+//        do {
+//            let model = try YOLOv3(configuration: .init()).model
+//            return try VNCoreMLModel(for: model)
+//        } catch {
+//            fatalError("Failed to load YOLOv3 model: \(error)")
+//        }
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -151,19 +151,19 @@ class YoloViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
             return
         }
         
-        let request = VNCoreMLRequest(model: visionModel) { [weak self] request, error in
-            DispatchQueue.main.async {
-                if let results = request.results {
-                    self?.drawVisionRequestResults(results)
-                }
-            }
-        }
-        
-        let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .up, options: [:])
-        do {
-            try handler.perform([request])
-        } catch {
-            print(error)
-        }
+//        let request = VNCoreMLRequest(model: visionModel) { [weak self] request, error in
+//            DispatchQueue.main.async {
+//                if let results = request.results {
+//                    self?.drawVisionRequestResults(results)
+//                }
+//            }
+//        }
+//        
+//        let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .up, options: [:])
+//        do {
+//            try handler.perform([request])
+//        } catch {
+//            print(error)
+//        }
     }
 }

@@ -67,6 +67,7 @@ extension ExampleInjectSwiftUIVC: UITableViewDelegate, UITableViewDataSource {
             guard let self = self else {return}
             self.showAlert(for: self.books[indexPath.row].title)
         }
+     
         return cell
     }
     

@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
+import SwiftUI
 
 class MoneyExchangeViewController: UIViewController {
     private let disposeBag = DisposeBag()
@@ -131,6 +132,15 @@ class MoneyExchangeViewController: UIViewController {
 
 import UIKit
 import SnapKit
+
+
+struct CustomButtonView_Previews: PreviewProvider {
+    static var previews: some View {
+        previewView(CurrencyInputView(currency: "USD"))
+            .frame(width: 100, height: 50) // Atur ukuran tampilan
+    }
+}
+
 
 class CurrencyInputView: UIView {
     // MARK: - UI Components

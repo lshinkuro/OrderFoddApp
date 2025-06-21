@@ -8,10 +8,104 @@
 import UIKit
 import SnapKit
 
+enum FeatureTypeSection: String, CaseIterable {
+    case cellModel
+    case detailPackage
+    case profilePage
+    case filterPage
+    case tooltipPage
+    case diffabelTablePage
+    case tabCollectionPage
+    case exampleGrid
+    case exampleHomepageBank
+    case exampleMultipleFilter
+    case stepQuestion
+    case tinderSwipe
+    case qrCode
+    case example3D
+    case exampleWebSocket
+    case mapkit
+    case urlSessionImplement
+    case gestureAnimation
+    case exampleCoachmark
+    case exampleCrypto
+    case todoListFirestore
+    case animation
+    case compositional
+    case onir
+    case mixUIKitAndSwiftUI
+    case xchangeRate
+    case Snapkit
+    case RXSwift
+    case exampleMVVM
+    case paymentMethode
+    case advancedTableView
+    case advancedCollectionView
+    case termsAgreement
+    case entertainmentCommerce
+    case NSAttributedString
+    
+    var description: String {
+        switch self {
+        case .cellModel: return "Cell Model"
+        case .detailPackage: return "Detail Package"
+        case .profilePage: return "Profile Page"
+        case .filterPage: return "Filter Page"
+        case .tooltipPage: return "Tooltip Page"
+        case .diffabelTablePage: return "Diffabel Table Page"
+        case .tabCollectionPage: return "Tab Collection Page"
+        case .exampleGrid: return "Example Grid"
+        case .exampleHomepageBank: return "Example Homepage Bank"
+        case .exampleMultipleFilter: return "Example Multiple Filter"
+        case .stepQuestion: return "Step Question"
+        case .tinderSwipe: return "Tinder Swipe"
+        case .qrCode: return "QR Code"
+        case .example3D: return "Example 3D"
+        case .NSAttributedString: return "NSAttributedString"
+        case .exampleWebSocket: return "Example Web Socket"
+        case .mapkit: return "Mapkit"
+        case .urlSessionImplement: return "URL Session implement"
+        case .gestureAnimation: return "Gesture Animation"
+        case .exampleCoachmark: return "Example Coachmark"
+        case .exampleCrypto: return "Example Crypto"
+        case .todoListFirestore: return "Todo List Firestore"
+        case .animation:
+            return "Animation"
+        case .compositional:
+            return "Compositional"
+        case .onir:
+            return "Onirix"
+        case .mixUIKitAndSwiftUI:
+            return "Mix UIKit & Swift UI"
+        case .xchangeRate:
+            return "Xchange Rate"
+        case .Snapkit:
+            return "snapkit"
+        case .RXSwift:
+            return "Rx Swift"
+        case .exampleMVVM:
+            return "Example MVVM"
+        case .paymentMethode:
+            return "Payment Methode"
+        case .advancedTableView:
+            return "Advanced Table View"
+        case .advancedCollectionView:
+            return "Advanced Collection View"
+        case .termsAgreement:
+            return "Terms Agreement"
+        case .entertainmentCommerce:
+            return "Entertainment & Commerce"
+        }
+    }
+    
+}
+
 class FeatureListViewController: UIViewController {
     
     private let tableView = UITableView()
     private let features = [
+        "Cell Model",
+        "Detail Package",
         "Profile Page",
         "Filter Page",
         "Tooltip Page",
@@ -42,7 +136,9 @@ class FeatureListViewController: UIViewController {
         "Payment Methode",
         "Advanced TableView",
         "Advanced CollectionView",
-        "Terms Agreement"
+        "Terms Agreement",
+        "Entertainment Commerce",
+        "NSAttributedString (iOS 13+)"
         
     ]
     
@@ -89,8 +185,12 @@ extension FeatureListViewController: UITableViewDelegate, UITableViewDataSource 
         let nextViewController: UIViewController
         
         switch selectedFeature {
+        case "Cell Model":
+            nextViewController = ShopV3ViewController()
+        case "Detail Package":
+            nextViewController = DetailPackageViewController()
         case "Profile Page":
-            nextViewController = ProfileViewController()
+            nextViewController = GradientTextAnimationViewController()
         case "Filter Page":
             nextViewController = FilterViewController()
         case "Settings Page":
@@ -104,22 +204,22 @@ extension FeatureListViewController: UITableViewDelegate, UITableViewDataSource 
             
         case "Example Grid":
             nextViewController = PromoViewControllerV2()
-
+            
         case "Example Homepage Bank":
             nextViewController = ExampleHomepageBankApp()
-
+            
         case "Example Multiple Filter":
             nextViewController = FilterViewController()
-
+            
         case "Step Question":
             nextViewController = StepQuestionViewController()
-
+            
         case "Tinder Swipe":
             nextViewController = SwipeCardViewController()
-
+            
         case "QR Code":
             nextViewController = QRCodeScanViewController()
-
+            
         case "Example 3D":
             nextViewController = Example3DViewController()
         case "Example Web Socket":
@@ -132,7 +232,7 @@ extension FeatureListViewController: UITableViewDelegate, UITableViewDataSource 
         case "Gesture Animation":
             nextViewController = URLSessionViewController()
         case "Example Coachmark":
-            nextViewController = ExampleCoachmarkViewController()
+            nextViewController = CoachmarkManualVC()
         case "Example Crypto":
             nextViewController = ExampleCryptoKitViewController()
         case "Todo List Firestore":
@@ -144,7 +244,7 @@ extension FeatureListViewController: UITableViewDelegate, UITableViewDataSource 
         case "Onirix":
             nextViewController = OnirixWebViewController()
         case "Mix UIKit & Swift UI":
-//            nextViewController = MixSwiftUIViewController()
+            //            nextViewController = MixSwiftUIViewController()
             nextViewController = ExampleInjectSwiftUIVC()
         case "XChange Rate":
             nextViewController = MoneyExchangeViewController()
@@ -163,14 +263,22 @@ extension FeatureListViewController: UITableViewDelegate, UITableViewDataSource 
             nextViewController = CompositionalCollectionViewViewController()
         case "Terms Agreement":
             nextViewController = TermsAgreementVC()
-
+        case "Entertainment Commerce":
+            //            nextViewController = EntertainmentCommerceViewController()
+            nextViewController = ImageDownloadViewController()
+        case "NSAttributedString (iOS 13+)":
+            //            nextViewController = EntertainmentCommerceViewController()
+            nextViewController = NSAttributeViewController()
+            
+            
             
         default:
             return
         }
         
         nextViewController.hidesBottomBarWhenPushed = true
-        navigationController?.pushViewController(nextViewController, animated: true)
+        navigationController?.pushFromBottom(nextViewController)
+        //        navigationController?.pushViewController(nextViewController, animated: true)
     }
 }
 

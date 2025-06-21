@@ -10,6 +10,14 @@ import SnapKit
 import RxSwift
 import RxCocoa
 import FloatingPanel
+import SwiftUI
+
+
+struct OrderViewController_Previews: PreviewProvider {
+    static var previews: some View {
+        previewViewController(ExampleSnapkitViewController())
+    }
+}
 
 class ExampleSnapkitViewController: UIViewController {
     
@@ -61,6 +69,12 @@ class ExampleSnapkitViewController: UIViewController {
          label.textAlignment = .center
          return label
      }()
+    
+    let labelTree: UILabel = UILabel().configure{
+        $0.text = "Label Three"
+        $0.textColor = .gray
+        $0.textAlignment = .center
+    }
      
      let labelTwo: UILabel = {
          let label = UILabel()
@@ -88,7 +102,7 @@ class ExampleSnapkitViewController: UIViewController {
     func setupView() {
         view.backgroundColor = .white
         view.add(profileImageView, nameLabel, bioLabel, editProfileButton, stackView)
-        stackView.addStack(labelOne, labelTwo)
+        stackView.addStack(labelOne, labelTwo, labelTree)
         
         // Mengatur layout menggunakan SnapKit
         profileImageView.snp.makeConstraints {
@@ -118,7 +132,7 @@ class ExampleSnapkitViewController: UIViewController {
         
         stackView.snp.makeConstraints {
             $0.top.equalTo(editProfileButton.snp.bottom).offset(20)
-            $0.left.right.equalToSuperview().inset(20)
+            $0.left.right.equalToSuperview()
         }
     }
     
@@ -133,7 +147,7 @@ class ExampleSnapkitViewController: UIViewController {
     
     func show() {
         let fpc = CustomFPC()
-        let vc = FilterViewController()
+        let vc = FilterPackageBottomSheetViewController()
         fpc.delegate = self
         fpc.setupAppearance()
         vc.heightFPC.subscribe = { [weak self] value in
@@ -181,4 +195,5 @@ class CustomFPC: FloatingPanelController {
         self.surfaceView.grabberHandle.backgroundColor = UIColor.foodGrey3
     }
 }
+
 
