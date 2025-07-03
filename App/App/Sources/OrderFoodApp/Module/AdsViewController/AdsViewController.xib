@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdsViewController" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="bas-Hx-OfB" id="dLX-0C-KS9"/>
+                <outlet property="toolbarView" destination="Ul7-EW-MX1" id="50L-Bs-IBU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wkWebView" destination="jhd-eX-YmV" id="0IJ-Me-wQh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ul7-EW-MX1" customClass="ToolBarView" customModule="OrderFoodApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="72"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="nRU-za-Xk1"/>
+                    </constraints>
+                </view>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhd-eX-YmV">
+                    <rect key="frame" x="0.0" y="131" width="393" height="687"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bas-Hx-OfB">
+                    <rect key="frame" x="0.0" y="792" width="393" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIJ-mg-e0m">
+                            <rect key="frame" x="16" y="10" width="361" height="40"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="dUt-rs-dYu"/>
+                            </constraints>
+                            <color key="tintColor" name="FoodWhite"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Order"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="jIJ-mg-e0m" firstAttribute="leading" secondItem="bas-Hx-OfB" secondAttribute="leading" constant="16" id="DtX-x8-6wP"/>
+                        <constraint firstAttribute="bottom" secondItem="jIJ-mg-e0m" secondAttribute="bottom" constant="10" id="L1s-ro-4o3"/>
+                        <constraint firstAttribute="trailing" secondItem="jIJ-mg-e0m" secondAttribute="trailing" constant="16" id="tAA-SC-YA8"/>
+                        <constraint firstItem="jIJ-mg-e0m" firstAttribute="top" secondItem="bas-Hx-OfB" secondAttribute="top" constant="10" id="vri-lz-uVv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="FoodWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bas-Hx-OfB" secondAttribute="bottom" id="9e9-Cp-IBd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jhd-eX-YmV" secondAttribute="bottom" id="CkB-xJ-sh8"/>
+                <constraint firstItem="Ul7-EW-MX1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FEO-n2-Lud"/>
+                <constraint firstItem="jhd-eX-YmV" firstAttribute="top" secondItem="Ul7-EW-MX1" secondAttribute="bottom" id="H7D-uR-wJu"/>
+                <constraint firstItem="bas-Hx-OfB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VWk-l9-cHd"/>
+                <constraint firstItem="bas-Hx-OfB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="YDA-kN-rNX"/>
+                <constraint firstItem="Ul7-EW-MX1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fo0-O0-LKo"/>
+                <constraint firstItem="Ul7-EW-MX1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lhW-Qj-TTT"/>
+                <constraint firstItem="jhd-eX-YmV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sUq-Mk-lVK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jhd-eX-YmV" secondAttribute="trailing" id="yDX-XO-sMp"/>
+            </constraints>
+            <point key="canvasLocation" x="17.557251908396946" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="FoodWhite">
+            <color red="0.97254901960784312" green="0.98431372549019602" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

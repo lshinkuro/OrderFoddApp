@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  OrderFoodApp
+
+  Created by Phincon on 05/10/24.
+  
+*/
+
+
+
+"title_food_app"  = "Food App";
+"welcome_message" = "Welcome";
+"welcome" = "Welcome %@ your point is %@";
+"logout_button" = "logout";
+

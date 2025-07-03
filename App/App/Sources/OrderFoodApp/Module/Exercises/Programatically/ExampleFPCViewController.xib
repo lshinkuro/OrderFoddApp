@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExampleFPCViewController" customModule="OrderFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="xgu-HH-hrv" id="fya-fB-baa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgu-HH-hrv">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="333"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delicious-italian-food" translatesAutoresizingMaskIntoConstraints="NO" id="IWm-Kv-U0s">
+                            <rect key="frame" x="96.666666666666686" y="30" width="200" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="9go-76-gJB"/>
+                                <constraint firstAttribute="width" constant="200" id="B8Y-Bx-LbL"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccu-E0-fCc">
+                            <rect key="frame" x="16" y="235" width="361" height="20"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZv-6Z-mj3">
+                            <rect key="frame" x="16" y="275" width="361" height="48"/>
+                            <color key="backgroundColor" red="0.56470588239999997" green="0.82745098039999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="gFn-gs-Dmp"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ccu-E0-fCc" firstAttribute="top" secondItem="IWm-Kv-U0s" secondAttribute="bottom" constant="5" id="1ew-SL-rYB"/>
+                        <constraint firstAttribute="bottom" secondItem="eZv-6Z-mj3" secondAttribute="bottom" constant="10" id="FA4-h4-koG"/>
+                        <constraint firstItem="IWm-Kv-U0s" firstAttribute="top" secondItem="xgu-HH-hrv" secondAttribute="top" constant="30" id="PdE-MN-rVW"/>
+                        <constraint firstItem="eZv-6Z-mj3" firstAttribute="leading" secondItem="xgu-HH-hrv" secondAttribute="leading" constant="16" id="RTM-MR-b3e"/>
+                        <constraint firstAttribute="trailing" secondItem="eZv-6Z-mj3" secondAttribute="trailing" constant="16" id="SHi-Je-rMA"/>
+                        <constraint firstAttribute="trailing" secondItem="ccu-E0-fCc" secondAttribute="trailing" constant="16" id="W6j-RD-Ozb"/>
+                        <constraint firstItem="IWm-Kv-U0s" firstAttribute="centerX" secondItem="xgu-HH-hrv" secondAttribute="centerX" id="Wf2-4Z-OcY"/>
+                        <constraint firstItem="eZv-6Z-mj3" firstAttribute="top" secondItem="ccu-E0-fCc" secondAttribute="bottom" constant="20" id="bxT-Mh-qJn"/>
+                        <constraint firstItem="ccu-E0-fCc" firstAttribute="leading" secondItem="xgu-HH-hrv" secondAttribute="leading" constant="16" id="feR-Tk-D6d"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xgu-HH-hrv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AB2-z7-jM1"/>
+                <constraint firstItem="xgu-HH-hrv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HAz-ao-Qib"/>
+                <constraint firstItem="xgu-HH-hrv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="HZY-yI-USj"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delicious-italian-food" width="2692" height="2592"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

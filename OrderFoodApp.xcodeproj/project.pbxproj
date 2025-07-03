@@ -312,7 +312,6 @@
 		36C52C502CAFDB5A0027E55A /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C52C4F2CAFDB5A0027E55A /* DashboardViewModel.swift */; };
 		36C52C532CAFE6890027E55A /* LeftMenuSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36C52C522CAFE6890027E55A /* LeftMenuSheetViewController.xib */; };
 		36C52C542CAFE6890027E55A /* LeftMenuSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C52C512CAFE6890027E55A /* LeftMenuSheetViewController.swift */; };
-		36C6A0FA2CD874B4005A446C /* OrderFoodApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36C6A0F82CD874B4005A446C /* OrderFoodApp.xcdatamodeld */; };
 		36D8B3A52CD9E86B0027D851 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 36D8B3A42CD9E86B0027D851 /* FirebaseAnalytics */; };
 		36D8B3A72CD9E86B0027D851 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 36D8B3A62CD9E86B0027D851 /* FirebaseAuth */; };
 		36D8B3A92CD9E86B0027D851 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 36D8B3A82CD9E86B0027D851 /* FirebaseCore */; };
@@ -366,6 +365,7 @@
 		36D8B4932CF8EBD90027D851 /* MoneyExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B4922CF8EBD90027D851 /* MoneyExchange.swift */; };
 		36D8B4952CF8EC150027D851 /* MoneyExchangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B4942CF8EC150027D851 /* MoneyExchangeViewModel.swift */; };
 		36D8B4982CFDF3860027D851 /* ExampleGridList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D8B4972CFDF3860027D851 /* ExampleGridList.swift */; };
+		36F3C6D32E167C9100EB6593 /* OrderFoodApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36F3C6D12E167C9100EB6593 /* OrderFoodApp.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -694,7 +694,6 @@
 		36C52C4F2CAFDB5A0027E55A /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		36C52C512CAFE6890027E55A /* LeftMenuSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuSheetViewController.swift; sourceTree = "<group>"; };
 		36C52C522CAFE6890027E55A /* LeftMenuSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuSheetViewController.xib; sourceTree = "<group>"; };
-		36C6A0F92CD874B4005A446C /* OrderFoodApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrderFoodApp.xcdatamodel; sourceTree = "<group>"; };
 		36D8B3D82CDDCD310027D851 /* MidtransViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidtransViewController.swift; sourceTree = "<group>"; };
 		36D8B3D92CDDCD310027D851 /* MidtransViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MidtransViewController.xib; sourceTree = "<group>"; };
 		36D8B3DC2CE1D7EE0027D851 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
@@ -726,6 +725,7 @@
 		36D8B4922CF8EBD90027D851 /* MoneyExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyExchange.swift; sourceTree = "<group>"; };
 		36D8B4942CF8EC150027D851 /* MoneyExchangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyExchangeViewModel.swift; sourceTree = "<group>"; };
 		36D8B4972CFDF3860027D851 /* ExampleGridList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGridList.swift; sourceTree = "<group>"; };
+		36F3C6D22E167C9100EB6593 /* OrderFoodApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrderFoodApp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1562,8 +1562,8 @@
 				36C52B6B2CAA458B0027E55A /* Main.storyboard */,
 				36C52B732CAA458C0027E55A /* Info.plist */,
 				365CFD0A2CB4D60E00180496 /* GoogleService-Info.plist */,
+				36F3C6D12E167C9100EB6593 /* OrderFoodApp.xcdatamodeld */,
 				365CFCF02CB2BE3800180496 /* Intents.intentdefinition */,
-				36C6A0F82CD874B4005A446C /* OrderFoodApp.xcdatamodeld */,
 			);
 			path = OrderFoodApp;
 			sourceTree = "<group>";
@@ -2538,11 +2538,11 @@
 				360766D22D43468E00505922 /* TableViewLanjutanViewController.swift in Sources */,
 				36C52C502CAFDB5A0027E55A /* DashboardViewModel.swift in Sources */,
 				361B0A262D8BB5B20024A8D2 /* PackageDetailCell.swift in Sources */,
-				36C6A0FA2CD874B4005A446C /* OrderFoodApp.xcdatamodeld in Sources */,
 				36C52BC62CAB9D200027E55A /* FoodItemDetailTableViewCell.swift in Sources */,
 				36121DD72CB0E06A00FD8E8F /* RoundedHeader.swift in Sources */,
 				36121DD92CB0E18E00FD8E8F /* Ext+UINavigationItem.swift in Sources */,
 				36121DE92CB0E28400FD8E8F /* Ext+UIFont.swift in Sources */,
+				36F3C6D32E167C9100EB6593 /* OrderFoodApp.xcdatamodeld in Sources */,
 				360668822D951D8F00DF3F64 /* PromotionTableViewCell.swift in Sources */,
 				363F2E812CBF79D900F6CDB1 /* FreeMeal.swift in Sources */,
 				361B0A282D8BB5CD0024A8D2 /* PackageItemListView.swift in Sources */,
@@ -3239,14 +3239,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		36C6A0F82CD874B4005A446C /* OrderFoodApp.xcdatamodeld */ = {
+		36F3C6D12E167C9100EB6593 /* OrderFoodApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				36C6A0F92CD874B4005A446C /* OrderFoodApp.xcdatamodel */,
+				36F3C6D22E167C9100EB6593 /* OrderFoodApp.xcdatamodel */,
 			);
-			currentVersion = 36C6A0F92CD874B4005A446C /* OrderFoodApp.xcdatamodel */;
-			name = OrderFoodApp.xcdatamodeld;
-			path = /Users/phincon/Documents/PhinconAcademy/Akademik/Project/OrderFoodApp/OrderFoodApp/OrderFoodApp.xcdatamodeld;
+			currentVersion = 36F3C6D22E167C9100EB6593 /* OrderFoodApp.xcdatamodel */;
+			path = OrderFoodApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

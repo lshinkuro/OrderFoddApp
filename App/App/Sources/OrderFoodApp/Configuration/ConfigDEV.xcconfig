@@ -1,0 +1,13 @@
+//
+//  ConfigDEV.xcconfig
+//  OrderFoodApp
+//
+//  Created by Phincon on 28/10/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+BASE_URL = http:/localhost:3001/api/v1
+

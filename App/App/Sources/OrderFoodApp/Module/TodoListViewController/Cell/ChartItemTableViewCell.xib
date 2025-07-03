@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="ChartItemTableViewCell" customModule="OrderFoodApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94j-Fw-fMf">
+                        <rect key="frame" x="16" y="5" width="288" height="98"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard-1" translatesAutoresizingMaskIntoConstraints="NO" id="RDu-Gu-I3f">
+                                <rect key="frame" x="8" y="8" width="82" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="KdB-nA-Q2S"/>
+                                    <constraint firstAttribute="height" constant="82" id="gil-wj-fHe"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pex-TF-rVJ">
+                                <rect key="frame" x="100" y="8" width="178" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rco-xs-gPd">
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGU-B9-6a1">
+                                        <rect key="frame" x="0.0" y="21.333333333333336" width="178" height="16.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8K-lf-dTY">
+                                        <rect key="frame" x="0.0" y="38.666666666666664" width="178" height="16.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="RDu-Gu-I3f" firstAttribute="top" secondItem="94j-Fw-fMf" secondAttribute="top" constant="8" id="0vt-2G-9Kj"/>
+                            <constraint firstItem="Pex-TF-rVJ" firstAttribute="leading" secondItem="RDu-Gu-I3f" secondAttribute="trailing" constant="10" id="CQ6-Je-YRR"/>
+                            <constraint firstItem="Pex-TF-rVJ" firstAttribute="top" secondItem="94j-Fw-fMf" secondAttribute="top" constant="8" id="MAn-6Z-y3P"/>
+                            <constraint firstAttribute="trailing" secondItem="Pex-TF-rVJ" secondAttribute="trailing" constant="10" id="ahw-xm-lLd"/>
+                            <constraint firstAttribute="bottom" secondItem="RDu-Gu-I3f" secondAttribute="bottom" constant="8" id="n83-Uy-ceX"/>
+                            <constraint firstItem="RDu-Gu-I3f" firstAttribute="leading" secondItem="94j-Fw-fMf" secondAttribute="leading" constant="8" id="sS2-Mc-ZOw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="94j-Fw-fMf" secondAttribute="trailing" constant="16" id="6dg-do-ZQf"/>
+                    <constraint firstItem="94j-Fw-fMf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="L3l-de-Id9"/>
+                    <constraint firstAttribute="bottom" secondItem="94j-Fw-fMf" secondAttribute="bottom" constant="7" id="TDh-hP-Nmc"/>
+                    <constraint firstItem="94j-Fw-fMf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vbD-Zg-3dZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ageLabel" destination="TGU-B9-6a1" id="hwj-pI-leU"/>
+                <outlet property="containerView" destination="94j-Fw-fMf" id="3LX-H0-FR2"/>
+                <outlet property="imgView" destination="RDu-Gu-I3f" id="oZ5-TY-Ybi"/>
+                <outlet property="nameLabel" destination="Rco-xs-gPd" id="P8X-e6-pHS"/>
+                <outlet property="statusLabel" destination="t8K-lf-dTY" id="wk9-gH-wg2"/>
+            </connections>
+            <point key="canvasLocation" x="109.9236641221374" y="63.380281690140848"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="onboard-1" width="213" height="278"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
